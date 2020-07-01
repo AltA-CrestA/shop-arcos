@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('layouts/head.html')
+	<body class="wrapper">
+		@@include('layouts/header.html') @@include('layouts/headerAfter.html')
+		<main>
+			<section class="mainSection">
+				<div class="slider">
+					<div class="slider__item">
+						<img src="/img/slider/01.jpg" alt="" />
+					</div>
+					<div class="slider__item">
+						<img src="/img/slider/01.jpg" alt="" />
+					</div>
+					<div class="slider__item">
+						<img src="/img/slider/01.jpg" alt="" />
+					</div>
+					<div class="slider__item">
+						<img src="/img/slider/01.jpg" alt="" />
+					</div>
+				</div>
+				<div class="goOver">
+					<div class="goOver__content">
+						<h2>ВСЕ ДЛЯ РЕМОНТА</h2>
+						<a href="#">
+							<p>Перейти в раздел</p>
+							<img src="/img/arrow.svg" alt="" />
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="popularItem">
+				<div class="popularItem__content">
+					<h2>Популярные товары</h2>
+					<div class="popularItem__content-slider"></div>
+				</div>
+			</section>
+		</main>
+
+		@@include('layouts/footer.html') @@include('layouts/scriptFooter.html')
+	</body>
+</html>

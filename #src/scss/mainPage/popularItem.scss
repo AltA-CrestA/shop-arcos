@@ -1,0 +1,17 @@
+.popularItem {
+	&__content {
+		padding: 60px 15px;
+		max-width: 1620px;
+		margin: 0 auto;
+
+		h2 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 56px;
+			padding-bottom: 67px;
+		}
+		&-slider {
+		}
+	}
+}
