@@ -1,7 +1,7 @@
 .footer {
 	background-color: #062a69;
 	&__content {
-		max-width: 1620px;
+		max-width: 1320px;
 		margin: 0 auto;
 		padding: 19px 15px;
 		display: flex;
@@ -9,14 +9,13 @@
 		align-items: center;
 		&-logo {
 			img {
-				width: 480px;
-				height: 292px;
+				width: 250px;
 			}
 		}
 		&-info {
 			display: grid;
-			grid-template-columns: 210px 460px 250px;
-			grid-gap: 38px 80px;
+			grid-template-columns: 168px 360px 200px;
+			grid-gap: 30px 64px;
 			&-item {
 				display: flex;
 				align-items: center;
@@ -26,7 +25,7 @@
 				}
 				p {
 					padding-left: 11px;
-					font-size: 22px;
+					font-size: 17px;
 					line-height: 26px;
 					color: #ffffff;
 					a {
@@ -56,10 +55,10 @@
 		border-top: 3px solid rgba(235, 235, 234, 0.1);
 		p {
 			padding: 27px 15px;
-			max-width: 1400px;
+			max-width: 1320px;
 			margin: 0 auto;
 			font-weight: normal;
-			font-size: 22px;
+			font-size: 17px;
 			line-height: 26px;
 			color: rgba(235, 235, 234, 0.7);
 		}

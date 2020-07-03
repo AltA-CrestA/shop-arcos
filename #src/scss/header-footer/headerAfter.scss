@@ -1,16 +1,16 @@
 .headerAfter {
     &__content {
-        max-width: 1620px;
+        max-width: 1320px;
         margin: 0 auto;
         padding: 43px 15px 9px 15px;
         @include disflex(flex, space-between, center);
         .element {
             @include disflex(flex, stretch, center);
             p {
-                padding-left: 13px;
+                padding-left: 8px;
                 font-style: normal;
                 font-weight: 500;
-                @include adaptiv-font(20, 12);
+                @include adaptiv-font(16, 12);
                 line-height: 23px;
             }
         }
@@ -34,7 +34,7 @@
             a {
                 color: #fbfbfb;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 19px;
                 background-color: #062a69;
                 border-radius: 50px;

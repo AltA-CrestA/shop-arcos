@@ -1,0 +1,143 @@
+.wr a {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+/*social share button*/
+.menu-item,
+.menu-open-button {
+    background: #ffffff;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 0px;
+    position: absolute;
+    color: #000000;
+    text-align: center;
+    line-height: 64px;
+    transform: translate3d(0, 0, 0);
+    transition: -webkit-transform ease-out 200ms;
+    transition: transform ease-out 200ms;
+    transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+    display: none;
+}
+
+.menuShare {
+    margin: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 28px;
+    z-index: 99;
+
+    a.menu-item .fa {
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* Если добавлять элемент, то увеличивать на +1 дочернюю  */
+
+.menu-item:nth-child(3) {
+    transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+    transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+    transition-duration: 180ms;
+}
+
+.menu-open-button {
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+    }
+
+    img {
+        transform: scale(0.4);
+        width: 100%;
+    }
+}
+
+.menu-open:checked + .menu-open-button {
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+/* Если добавлять элемент, то увеличивать на +1 дочернюю и арифметически высчитать расстояние второго значения в пикселях  */
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+    transition-duration: 180ms;
+    transform: translate3d(0.08361px, -84.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+    transition-duration: 280ms;
+    transform: translate3d(0.08361px, -174.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+    transition-duration: 380ms;
+    transform: translate3d(0.08361px, -264.99997px, 0);
+}
+
+/*phone*/
+.phone_share_btn {
+    background: #072969;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+
+    img {
+        padding-top: 2px;
+        transform: scale(0.46);
+        width: 100%;
+    }
+}
+
+.phone_share_btn:hover {
+    color: #000000;
+    text-shadow: none;
+}
+
+.whatsapp_share_btn {
+    background: #072969;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    img {
+        padding-top: 2px;
+        transform: scale(0.46);
+        width: 100%;
+    }
+}
+
+.whatsapp_share_btn:hover {
+    color: white;
+    text-shadow: none;
+}
+
+/*end social share button*/
+
+@media screen and (max-width: 500px) {
+    .menuShare {
+        right: 30px;
+    }
+}
