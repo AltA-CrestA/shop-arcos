@@ -1,0 +1,144 @@
+.catalogItem {
+    &__content {
+        padding: 50px 15px 50px 15px;
+        max-width: 1320px;
+        margin: 0 auto;
+        &-title {
+            @include disflex(flex, space-between, center);
+            padding: 0 0 30px 0;
+            h5 {
+                font-weight: 500;
+                @include adaptiv-fontAll(35, 20);
+                line-height: 59px;
+                span {
+                    color: silver;
+                }
+            }
+            &-btn {
+                display: none;
+                a {
+                    @include disflex(flex, center, center);
+                    border: 2px 1px solid silver;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    padding: 20px;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 8px;
+                }
+            }
+        }
+        &-item {
+            @include disflex(flex, space-between, flex-start);
+            &-filter {
+                display: flex;
+                flex-direction: column;
+                background: #ffffff;
+                box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+                padding: 30px;
+                margin: 0 20px 0 0;
+                width: 25%;
+                h6 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    position: relative;
+                    padding: 0 0 5px 0;
+                    text-decoration: underline;
+                    text-decoration-style: dotted;
+                }
+                a {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    transition: 0.1s ease-in-out;
+                    &:hover {
+                        color: #062a69;
+                    }
+                }
+            }
+            &-grid {
+                width: 75%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 2vw;
+                &-product {
+                    @include disflex(flex, center, center);
+                    flex-direction: column;
+                    background: #ffffff;
+                    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+                    border-radius: 5px;
+                    padding: 26px 10px;
+                    img {
+                        width: 164.88px;
+                        border-radius: 50px;
+                    }
+
+                    h3 {
+                        padding: 45px 0 6px 0px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #c4c4c4;
+                    }
+
+                    .discond {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration-line: line-through;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                    a {
+                        margin-top: 10px;
+                        background: rgb(6, 42, 105);
+                        box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
+                        border-radius: 50px;
+                        padding: 12px 21px;
+                        @include disflex(flex, center, center);
+
+                        p {
+                            font-size: 14px;
+                            color: white;
+                            padding-right: 15px;
+                        }
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 976px) {
+    .catalogItem__content-title-btn {
+        display: block;
+    }
+    .catalogItem__content-item-filter {
+        display: none;
+    }
+    .catalogItem__content-item-grid {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalogItem__content-item-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .catalogItem__content-item-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

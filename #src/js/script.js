@@ -2,6 +2,7 @@
 @@include('popup.js');
 @@include('webp.js');
 @@include('burger.js');
+@@include('filter.js');
 @@include('mainSlider.js');
 @@include('map.js');
 @@include('productSlider.js');
