@@ -2,52 +2,259 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Главная — Shop-Arcos';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+<main>
+    <section class="mainSection">
+        <div class="slider">
+            <div class="slider__item">
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            <div class="slider__item">
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="slider__item">
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
+            </div>
+            <div class="slider__item">
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
             </div>
         </div>
+        <div class="goOver">
+            <div class="goOver__content">
+                <h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
+                <a href="#">
+                    <p>Перейти в раздел</p>
+                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="minButton">
+        <div class="minButton__content">
+            <div class="minButton__content-goOver">
+                <a href="#">Перейти в каталог</a>
+            </div>
+            <div class="minButton__content-call">
+                <a href="#popup" class="popup-link">Обратный звонок</a>
+            </div>
+        </div>
+    </section>
 
-    </div>
-</div>
+    <section class="popularItem">
+        <div class="popularItem__content">
+            <h2>Популярные товары</h2>
+            <div class="popularItem__content-slider">
+                <div class="popularItem__content-slider-buttons">
+                    <button class="popularItem__content-slider-buttons-prev">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" alt="" /></picture>
+                    </button>
+                    <button class="popularItem__content-slider-buttons-next">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" alt="" /></picture>
+                    </button>
+                </div>
+                <div class="popularItem__content-slider-track">
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popularItem__content-slider-track-item">
+                        <div class="popularItem__content-slider-track-item-product">
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stocks">
+        <div class="stocks__content">
+            <h2>Акции</h2>
+            <div class="stocks__content-slider">
+                <div class="stocks__content-slider-buttons">
+                    <button class="stocks__content-slider-buttons-prev">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" alt="" /></picture>
+                    </button>
+                    <button class="stocks__content-slider-buttons-next">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/btnPrev.svg" alt="" /></picture>
+                    </button>
+                </div>
+                <div class="stocks__content-slider-track">
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stocks__content-slider-track-item">
+                        <div class="stocks__content-slider-track-item-product">
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p>-15%</p>
+                                </div>
+                            </div>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h3>15 штук/упаковка</h3>
+                            <p class="discond">800<span> руб.</span></p>
+                            <p>500<span> руб.</span></p>
+                            <a href="#">
+                                <p>В корзину</p>
+                                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
