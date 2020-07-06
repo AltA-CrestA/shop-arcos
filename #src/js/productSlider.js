@@ -1,5 +1,20 @@
 let position = 0;
-const slidsToShow = 4;
+
+let slidsToShow;
+if (matchMedia) {
+	let screen = window.matchMedia('(max-width:976px)');
+	screen.addListener(changes);
+	changes(screen);
+}
+
+function changes(screen, screenM) {
+	if (screen.matches) {
+		slidsToShow = 2;
+	} else {
+		slidsToShow = 4;
+	}
+}
+
 const slidsToScroll = 1;
 
 const container = document.querySelector('.popularItem__content-slider');

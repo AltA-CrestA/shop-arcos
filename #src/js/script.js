@@ -5,5 +5,5 @@
 @@include('mainSlider.js');
 @@include('productSlider.js');
 @@include('stockstSlider.js');
-@@include('map.js');
 @@include('popup.js');
+@@include('map.js');

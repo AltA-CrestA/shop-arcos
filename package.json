@@ -17,14 +17,12 @@
     "gulp-file-include": "^2.2.2",
     "gulp-fonter": "^0.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "php-include-html": "^1.4.6"
@@ -32,7 +30,10 @@
   "dependencies": {
     "animate.css": "^4.1.0",
     "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-webp": "^4.0.1",
     "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "slick-carousel": "^1.8.1"
   }
 }

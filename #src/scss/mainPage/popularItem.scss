@@ -1,6 +1,6 @@
 .popularItem {
     &__content {
-        padding: 80px 15px 60px 15px;
+        padding: 20px 20px 60px 0px;
         max-width: 1320px;
         margin: 0 auto;
 
@@ -63,7 +63,6 @@
 
                         img {
                             width: 164.88px;
-                            height: 160px;
                             border-radius: 50px;
                         }
 
@@ -133,6 +132,20 @@
                     margin-right: 8%;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .popularItem__content-slider-track-item-product{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .popularItem__content-slider-track-item-product{
+        img {
+            width: 20vw;
         }
     }
 }

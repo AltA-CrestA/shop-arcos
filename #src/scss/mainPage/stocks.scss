@@ -1,6 +1,6 @@
 .stocks {
     &__content {
-        padding: 80px 15px 60px 15px;
+        padding: 20px 20px 60px 0px;
         max-width: 1320px;
         margin: 0 auto;
 
@@ -24,7 +24,7 @@
                         background: #ffffff;
                         box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
                         border-radius: 5px;
-                        padding: 26px 58px;
+                        padding: 26px 10px;
                         width: 280px;
                         position: relative;
 
@@ -134,5 +134,10 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 1270px) {
+    .stocks__content-slider-track-item-product{
+        width: 100%;
     }
 }
