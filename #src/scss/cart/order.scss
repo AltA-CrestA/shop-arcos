@@ -1,0 +1,49 @@
+.order {
+	&__content {
+		padding: 20px 15px 50px 15px;
+		max-width: 1320px;
+		margin: 0 auto;
+		&-back {
+			display: flex;
+			p {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 30px;
+				color: #c4c4c4;
+				padding: 0 10px;
+			}
+			a {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 30px;
+				color: #c4c4c4;
+			}
+		}
+		h2 {
+			padding: 19px 0;
+			font-weight: 500;
+			font-size: 35px;
+			line-height: 59px;
+		}
+		&-person {
+			border-top: 5px solid #072969;
+			h2 {
+				font-weight: bold;
+				font-size: 22px;
+				line-height: 33px;
+			}
+			&-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px 50px;
+				input {
+					background: #ffffff;
+					border: 3px solid #ebebea;
+					box-sizing: border-box;
+					border-radius: 5px;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}
