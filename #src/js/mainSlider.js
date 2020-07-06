@@ -10,5 +10,14 @@ $(document).ready(function () {
 		autoplay: true,
 		speed: 1000,
 		autoplaySpeed: 1000,
+		responsive: [
+			{
+				breakpoint: 976,
+				settings: {
+					loop: false,
+					arrows: false,
+				},
+			}
+		],
 	});
 });

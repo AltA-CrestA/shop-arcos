@@ -1,8 +1,22 @@
 .mainSection {
-    padding: 0 15px;
-    max-width: 1320px;
-    margin: 0 auto;
+    padding: 0px 30px;
+    max-width: 1350px;
+    margin: px auto;
     position: relative;
+}
+
+@media(max-width:1140px){
+    .mainSection {
+        margin: 15px auto 0px auto;
+        padding: 0 0px;
+        width: 100%;
+    }
+}
+
+@media(max-width:976px){
+    .mainSection {
+        margin: 15px auto -10px auto;
+    }
 }
 
 .goOver {
@@ -16,7 +30,7 @@
 
         h2 {
             font-weight: bold;
-            font-size: 35px;
+            @include adaptiv-fontAll(35, 20);
             line-height: 47px;
             margin-bottom: 35px;
         }
@@ -31,6 +45,7 @@
             p {
                 color: white;
                 padding-right: 24px;
+                @include adaptiv-fontAll(20, 14);
             }
 
             img {
@@ -38,6 +53,11 @@
                 height: 25px;
             }
         }
+    }
+}
+@media (max-width:976px) {
+    .goOver{
+        display: none;
     }
 }
 
@@ -94,13 +114,38 @@
     background: url("../img/slider/right.svg") 0 0 / 100% no-repeat;
 }
 
+
 /* Точки (булиты) */
 .slick-dots {
     position: absolute;
     z-index: 20;
     bottom: 8%;
     left: 50%;
+    transform: translate(-50%, 0);
     @include disflex(flex, center, center);
+}
+
+@media (max-width:1140px) {
+    .slick-dots {
+        bottom: 12%;
+    }
+}
+
+@media (max-width:700px) {
+    .slick-dots {
+        bottom: 16%;
+    }
+}
+
+@media (max-width:500px) {
+    .slick-dots {
+        bottom: 20%;
+    }
+}
+@media (max-width:400px) {
+    .slick-dots {
+        bottom: 22%;
+    }
 }
 
 .slick-dots li {

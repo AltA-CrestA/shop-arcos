@@ -1,5 +1,20 @@
 let position1 = 0;
-const slidsToShow1 = 4;
+let slidsToShow1;
+
+if(matchMedia){
+	let screen1 = window.matchMedia("(max-width:976px)");
+	screen1.addListener(changes1);
+	changes1(screen1)
+} 
+
+function changes1(screen1){
+	if(screen1.matches){
+		slidsToShow1 = 3;
+	} else {
+		slidsToShow1 = 4;
+	}
+}
+
 const slidsToScroll1 = 1;
 
 const container1 = document.querySelector('.stocks__content-slider');

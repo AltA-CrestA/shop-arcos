@@ -1,5 +1,23 @@
 let position = 0;
-const slidsToShow = 4;
+
+let slidsToShow;
+if(matchMedia){
+	let screen = window.matchMedia("(max-width:976px)");
+	screen.addListener(changes);
+	changes(screen)
+} 
+
+function changes(screen, screenM){
+	if(screen.matches){
+		slidsToShow = 3;
+		console.log('976');
+		
+	} else {
+		slidsToShow = 4;
+		console.log('много');
+	}
+}
+
 const slidsToScroll = 1;
 
 const container = document.querySelector('.popularItem__content-slider');
@@ -13,6 +31,7 @@ const movePosition = slidsToScroll * itemWidth;
 
 items.forEach((item) => {
 	item.style.minWidth = `${itemWidth}px`;
+
 });
 
 btnNext.addEventListener('click', () => {

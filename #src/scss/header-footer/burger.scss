@@ -1,10 +1,41 @@
-.header__burger {
+.header__burger-logo{
     display: none;
+    &-image{
+        img{
+            height: 50px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .header__burger-logo{
+        &-image{
+            img{
+                height: 35px;
+            }
+        }
+    }
+    .header__burger {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__burger-logo{
+        &-image{
+            img{
+                height: 30px;
+            }
+        }
+    }
 }
 
 @media (max-width: 976px) {
     body.lock {
         overflow: hidden;
+    }
+
+    .header__burger-logo{
+        @include disflex(flex, stretch, center);
     }
 
     .header__burger {
@@ -13,11 +44,11 @@
         position: relative;
         width: 30px;
         height: 20px;
-        z-index: 3003;
+        z-index: 100;
 
         span {
             position: absolute;
-            background-color: #fff;
+            background-color: rgb(0, 0, 0);
             left: 0;
             width: 100%;
             height: 2px;
@@ -28,7 +59,7 @@
         &:before,
         &:after {
             content: "";
-            background-color: #fff;
+            background-color: rgb(0, 0, 0);
             position: absolute;
             width: 100%;
             height: 2px;
@@ -47,22 +78,25 @@
         &.active {
             span {
                 transform: scale(0);
+                background-color: rgb(6, 42, 105);
             }
 
             &:before {
                 transform: rotate(45deg);
                 top: 9px;
+                background-color: rgb(6, 42, 105);
             }
 
             &:after {
                 transform: rotate(-45deg);
                 bottom: 9px;
+                background-color: rgb(6, 42, 105);
             }
         }
     }
 
     .header__content-menu {
-        z-index: 3;
+        z-index: 100;
         position: fixed;
         text-align: center;
         top: 0;
@@ -71,53 +105,17 @@
         height: 100%;
         overflow: auto;
         transition: 0.3s cubic-bezier(0.69, 0.4, 0.4, 0.75);
-        background-color: #060608;
+        background-color: #ffffff;
         padding: 80px 10px 20px 10px;
-
         &.active {
+            padding: 80px 10px 20px 0px;
             left: 0;
         }
-
-        ul {
-            display: block !important;
-            margin-top: 20px;
-
-            li {
-                margin: 0 0 60px 0;
-                margin-right: 0px !important;
-                @include adaptiv-fontMin(60, 28);
-            }
-        }
-    }
-
-    .headerW__content__menuW {
-        margin-left: 10vw;
-        z-index: 3;
-        position: fixed;
-        text-align: center;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        transition: all 0.3s ease 0s;
-        background-color: #060608;
-        padding: 80px 10px 20px 10px;
-
-        &.active {
-            margin-left: 0vw;
-            left: 0;
-        }
-
-        ul {
-            display: block !important;
-            margin-top: 20px;
-
-            li {
-                margin: 0 0 60px 0;
-                margin-right: 0px !important;
-                @include adaptiv-fontMin(60, 28);
-            }
+        a {
+            display: block;
+            color:rgb(6, 42, 105);
+            @include adaptiv-fontMin(60, 28);
+            margin: 0 0px 40px 0;
         }
     }
 }
