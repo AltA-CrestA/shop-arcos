@@ -1,180 +1,179 @@
 .mainSection {
-    padding: 0px 30px;
-    max-width: 1350px;
-    margin: px auto;
-    position: relative;
+	padding: 0px 30px;
+	max-width: 1350px;
+	margin: 0px auto;
+	position: relative;
 }
 
-@media(max-width:1140px){
-    .mainSection {
-        margin: 15px auto 0px auto;
-        padding: 0 0px;
-        width: 100%;
-    }
+@media (max-width: 1140px) {
+	.mainSection {
+		margin: 15px auto 0px auto;
+		padding: 0 0px;
+		width: 100%;
+	}
 }
 
-@media(max-width:976px){
-    .mainSection {
-        margin: 15px auto -10px auto;
-    }
+@media (max-width: 976px) {
+	.mainSection {
+		margin: 15px auto -10px auto;
+	}
 }
 
 .goOver {
-    position: absolute;
-    bottom: 12%;
-    left: 10%;
+	position: absolute;
+	bottom: 12%;
+	left: 10%;
 
-    &__content {
-        @include disflex(flex, stretch, center);
-        flex-direction: column;
+	&__content {
+		@include disflex(flex, stretch, center);
+		flex-direction: column;
 
-        h2 {
-            font-weight: bold;
-            @include adaptiv-fontAll(35, 20);
-            line-height: 47px;
-            margin-bottom: 35px;
-        }
+		h2 {
+			font-weight: bold;
+			@include adaptiv-fontAll(35, 20);
+			line-height: 47px;
+			margin-bottom: 35px;
+		}
 
-        a {
-            background: rgb(6, 42, 105);
-            box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
-            border-radius: 50px;
-            padding: 15px 25px;
-            @include disflex(flex, center, center);
+		a {
+			background: rgb(6, 42, 105);
+			box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
+			border-radius: 50px;
+			padding: 15px 25px;
+			@include disflex(flex, center, center);
 
-            p {
-                color: white;
-                padding-right: 24px;
-                @include adaptiv-fontAll(20, 14);
-            }
+			p {
+				color: white;
+				padding-right: 24px;
+				@include adaptiv-fontAll(20, 14);
+			}
 
-            img {
-                width: 25px;
-                height: 25px;
-            }
-        }
-    }
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
 }
-@media (max-width:976px) {
-    .goOver{
-        display: none;
-    }
+@media (max-width: 976px) {
+	.goOver {
+		display: none;
+	}
 }
 
 .slider {
-    position: relative;
+	position: relative;
 }
 
 .slick-list {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 /* Лента слайдов */
 .slick-track {
-    @include disflex(flex, flex-start, flex-start);
+	@include disflex(flex, flex-start, flex-start);
 }
 
 /* Слайд */
 .slick-slide {
-    @include disflex(flex, center, flex-start);
-    margin-bottom: 30px;
-    position: relative;
+	@include disflex(flex, center, flex-start);
+	margin-bottom: 30px;
+	position: relative;
 
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.38);
-        z-index: 0;
-    }
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(255, 255, 255, 0.38);
+		z-index: 0;
+	}
 }
 
 /* Стрелка */
 .slick-arrow {
-    position: absolute;
-    top: 50%;
-    margin: -30px 0 0 0;
-    z-index: 20;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
+	position: absolute;
+	top: 50%;
+	margin: -30px 0 0 0;
+	z-index: 20;
+	font-size: 0;
+	width: 50px;
+	height: 50px;
 }
 
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
-    left: -29px;
-    background: url("../img/slider/left.svg") 0 0 / 100% no-repeat;
+	left: -29px;
+	background: url('../img/slider/left.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
-    right: -29px;
-    background: url("../img/slider/right.svg") 0 0 / 100% no-repeat;
+	right: -29px;
+	background: url('../img/slider/right.svg') 0 0 / 100% no-repeat;
 }
-
 
 /* Точки (булиты) */
 .slick-dots {
-    position: absolute;
-    z-index: 20;
-    bottom: 8%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    @include disflex(flex, center, center);
+	position: absolute;
+	z-index: 20;
+	bottom: 8%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	@include disflex(flex, center, center);
 }
 
-@media (max-width:1140px) {
-    .slick-dots {
-        bottom: 12%;
-    }
+@media (max-width: 1140px) {
+	.slick-dots {
+		bottom: 12%;
+	}
 }
 
-@media (max-width:700px) {
-    .slick-dots {
-        bottom: 16%;
-    }
+@media (max-width: 700px) {
+	.slick-dots {
+		bottom: 16%;
+	}
 }
 
-@media (max-width:500px) {
-    .slick-dots {
-        bottom: 20%;
-    }
+@media (max-width: 500px) {
+	.slick-dots {
+		bottom: 20%;
+	}
 }
-@media (max-width:400px) {
-    .slick-dots {
-        bottom: 22%;
-    }
+@media (max-width: 400px) {
+	.slick-dots {
+		bottom: 22%;
+	}
 }
 
 .slick-dots li {
-    list-style: none;
-    margin: 0 10px;
+	list-style: none;
+	margin: 0 10px;
 }
 
 /* Активная точка */
 .slick-dots li.slick-active button {
-    background-color: transparent;
-    border: 1px solid #c9c9c9;
+	background-color: transparent;
+	border: 1px solid #c9c9c9;
 }
 
 /* Элемент точки */
 .slick-dots li button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #c9c9c9;
-    border-radius: 50%;
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #c9c9c9;
+	border-radius: 50%;
 
-    &:hover {
-        background-color: black;
-    }
+	&:hover {
+		background-color: black;
+	}
 }
 
 .slider__item {
-    img {
-        max-width: 100%;
-        max-height: 708px;
-    }
+	img {
+		max-width: 100%;
+		max-height: 708px;
+	}
 }

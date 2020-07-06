@@ -1,20 +1,17 @@
 let position = 0;
 
 let slidsToShow;
-if(matchMedia){
-	let screen = window.matchMedia("(max-width:976px)");
+if (matchMedia) {
+	let screen = window.matchMedia('(max-width:976px)');
 	screen.addListener(changes);
-	changes(screen)
-} 
+	changes(screen);
+}
 
-function changes(screen, screenM){
-	if(screen.matches){
-		slidsToShow = 3;
-		console.log('976');
-		
+function changes(screen, screenM) {
+	if (screen.matches) {
+		slidsToShow = 2;
 	} else {
 		slidsToShow = 4;
-		console.log('много');
 	}
 }
 
@@ -31,7 +28,6 @@ const movePosition = slidsToScroll * itemWidth;
 
 items.forEach((item) => {
 	item.style.minWidth = `${itemWidth}px`;
-
 });
 
 btnNext.addEventListener('click', () => {

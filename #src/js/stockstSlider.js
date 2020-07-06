@@ -1,15 +1,15 @@
 let position1 = 0;
 let slidsToShow1;
 
-if(matchMedia){
-	let screen1 = window.matchMedia("(max-width:976px)");
+if (matchMedia) {
+	let screen1 = window.matchMedia('(max-width:976px)');
 	screen1.addListener(changes1);
-	changes1(screen1)
-} 
+	changes1(screen1);
+}
 
-function changes1(screen1){
-	if(screen1.matches){
-		slidsToShow1 = 3;
+function changes1(screen1) {
+	if (screen1.matches) {
+		slidsToShow1 = 2;
 	} else {
 		slidsToShow1 = 4;
 	}

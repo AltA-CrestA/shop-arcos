@@ -7,4 +7,3 @@
 @@include('stockstSlider.js');
 @@include('popup.js');
 @@include('map.js');
-
