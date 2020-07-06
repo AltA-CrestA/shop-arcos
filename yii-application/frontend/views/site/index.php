@@ -25,7 +25,7 @@ $this->title = 'Главная — Shop-Arcos';
             <div class="goOver__content">
                 <h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
                 <a href="#">
-                    <p>Перейти в раздел</p>
+                    <p>Перейти в каталог</p>
                     <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
                 </a>
             </div>
@@ -42,6 +42,67 @@ $this->title = 'Главная — Shop-Arcos';
         </div>
     </section>
 
+    <section class="catalog">
+        <div class="catalog__content">
+            <h2>Каталог товаров</h2>
+            <div class="catalog__content-grid">
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Пуговицы</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Наконечники</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Лентагвозди</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Нитки</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Подпятники</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Профиль ППУ</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Кольца декоративные</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Босонные изделия</p>
+                    </a>
+                </div>
+                <div class="catalog__content-grid-item">
+                    <a href="#">
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+                        <p>Прочая фурнитура</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="popularItem">
         <div class="popularItem__content">
             <h2>Популярные товары</h2>
@@ -131,6 +192,7 @@ $this->title = 'Главная — Shop-Arcos';
             </div>
         </div>
     </section>
+
     <section class="stocks">
         <div class="stocks__content">
             <h2>Акции</h2>
@@ -251,6 +313,83 @@ $this->title = 'Главная — Shop-Arcos';
                                 <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutCompany">
+        <div class="aboutCompany__content">
+            <h2>О компании</h2>
+            <div class="aboutCompany__content-item">
+                <div class="aboutCompany__content-item-left">
+                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/about.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/about.png" alt="" /></picture>
+                </div>
+                <div class="aboutCompany__content-item-right">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nobis sunt facere eaque,
+                        asperiores neque ipsum, dolorum consequatur eligendi blanditiis alias, debitis reiciendis
+                        aspernatur commodi tempore in error ad eius magnam illo nulla temporibus? Praesentium
+                        commodi quisquam, optio beatae distinctio reiciendis nemo illum laborum ullam vel fuga,
+                        eum aperiam quas pariatur sunt nulla dicta cum, ad explicabo tempore minima nihil dolorum
+                        ipsa sit. Quis labore facere, voluptatibus eum distinctio rem dolorem blanditiis dolores
+                        esse expedita voluptas nisi ducimus nulla soluta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="why__content">
+            <h2>Почему выбирают нас?</h2>
+            <div class="why__content-item">
+                <div class="why__content-item-flex">
+                    <div class="why__content-item-flex-box">
+                        <div class="why__content-item-flex-box-icon">
+                            <h3>Оперативность</h3>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/time.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/time.png" alt="" /></picture>
+                        </div>
+                        <p>Быстрая доставка по всей России</p>
+                    </div>
+                    <div class="why__content-item-flex-box">
+                        <div class="why__content-item-flex-box-icon">
+                            <h3>Доступность</h3>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/wallet.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/wallet.png" alt="" /></picture>
+                        </div>
+                        <p>Прямые поставки из Китая, делают наш товар дешевле, чем у других поставщиков</p>
+                    </div>
+                    <div class="why__content-item-flex-box">
+                        <div class="why__content-item-flex-box-icon">
+                            <h3>Оперативность</h3>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/garant.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/garant.png" alt="" /></picture>
+                        </div>
+                        <p>
+                            При необходимости можем отправить образцы почтой,чтобы вы убедились в качестве нашего
+                            товара
+                        </p>
+                    </div>
+                </div>
+                <div class="why__content-item-flex why__image">
+                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/about.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/about.png" alt="" /></picture>
+                </div>
+                <div class="why__content-item-flex why__flex__second">
+                    <div class="why__content-item-flex-box">
+                        <div class="why__content-item-flex-box-icon">
+                            <h3>Профессионализм</h3>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/job.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/job.png" alt="" /></picture>
+                        </div>
+                        <p>Все наши сотрудники - специалисты своего дела</p>
+                    </div>
+                    <div class="why__content-item-flex-box">
+                        <div class="why__content-item-flex-box-icon">
+                            <h3>Качество</h3>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/quality.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/quality.png" alt="" /></picture>
+                        </div>
+                        <p>
+                            Мы ручаемся за качество, так как сами используем нашу фурнитуру в нашей мебельной
+                            фабрике
+                        </p>
                     </div>
                 </div>
             </div>
