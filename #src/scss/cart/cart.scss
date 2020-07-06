@@ -26,140 +26,113 @@
 			line-height: 59px;
 		}
 		&-cart {
-			@include disflex(flex, space-between, flex-start);
-			&-left {
-				width: 65%;
-				h3 {
-					padding: 26px 0 32px 0;
+			width: 100%;
+			h3 {
+				padding: 26px 0 32px 0;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 33px;
+			}
+			&-name {
+				display: grid;
+				grid-template-columns: 49% 27% 22% 2%;
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: #e5e5e5;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				}
+				p {
 					font-weight: 500;
 					font-size: 22px;
-					line-height: 33px;
+					line-height: 30px;
+					color: #c4c4c4;
 				}
-				&-name {
-					display: grid;
-					grid-template-columns: 49% 27% 22% 2%;
-					position: relative;
-					&::after {
-						position: absolute;
-						content: '';
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						height: 1px;
-						background-color: #e5e5e5;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-					}
-					p {
-						font-weight: 500;
-						font-size: 22px;
-						line-height: 30px;
-						color: #c4c4c4;
-					}
+			}
+			&-product {
+				padding: 22px 0 18px 0;
+				display: grid;
+				grid-template-columns: 49% 27% 22% 2%;
+				align-items: center;
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: #e5e5e5;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 				}
-				&-product {
-					padding: 22px 0 18px 0;
-					display: grid;
-					grid-template-columns: 49% 27% 22% 2%;
-					align-items: center;
-					position: relative;
-					&::after {
-						position: absolute;
-						content: '';
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						height: 1px;
-						background-color: #e5e5e5;
-						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				&-main {
+					@include disflex(flex, stretch, center);
+					img {
+						width: 100px;
+						border-radius: 50px;
+						margin-right: 20px;
 					}
-					&-main {
-						@include disflex(flex, stretch, center);
-						img {
-							width: 100px;
-							border-radius: 50px;
-							margin-right: 20px;
+					&-title {
+						p {
+							font-weight: 500;
+							font-size: 20px;
+							line-height: 28px;
 						}
-						&-title {
+						&-how {
+							@include disflex(flex, stretch, center);
 							p {
 								font-weight: 500;
 								font-size: 20px;
-								line-height: 28px;
+								line-height: 26px;
+								color: #c4c4c4;
+								padding-right: 10px;
 							}
-							&-how {
-								@include disflex(flex, stretch, center);
-								p {
-									font-weight: 500;
-									font-size: 20px;
-									line-height: 26px;
-									color: #c4c4c4;
-									padding-right: 10px;
-								}
-								input {
-									width: 100px;
-									font-weight: 500;
-									font-size: 16px;
-									line-height: 19px;
-									color: #c4c4c4;
-								}
+							input {
+								width: 100px;
+								font-weight: 500;
+								font-size: 16px;
+								line-height: 19px;
+								color: #c4c4c4;
 							}
 						}
 					}
 				}
-				.sum {
+			}
+			.sum {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 28px;
+			}
+			.delete {
+				font-size: 30px;
+			}
+			&-total {
+				display: grid;
+				grid-template-columns: 76% 22% 2%;
+				align-items: center;
+				p {
+					padding: 30px 0 0px 0;
 					font-weight: 500;
-					font-size: 20px;
-					line-height: 28px;
-				}
-				.delete {
-					font-size: 30px;
-				}
-				&-total {
-					display: grid;
-					grid-template-columns: 76% 22% 2%;
-					align-items: center;
-					p {
-						padding: 30px 0 0px 0;
-						font-weight: 500;
-						font-size: 22px;
-						line-height: 26px;
-					}
+					font-size: 22px;
+					line-height: 26px;
 				}
 			}
-			&-right {
-				margin-top: 30px;
-				width: 30%;
-				padding: 46px 26px;
-				background: #ffffff;
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				&-sum__item,
-				&-dostavka,
-				&-work {
-					@include disflex(flex, space-between, center);
-					p {
-						font-weight: 500;
-						font-size: 20px;
-						line-height: 30px;
-						padding-bottom: 10px;
-					}
-				}
-				&-total {
-					@include disflex(flex, center, center);
+			&-btn {
+				text-align: end;
+				padding-top: 50px;
+				a {
+					color: white;
 					font-weight: 500;
-					font-size: 24px;
-					line-height: 42px;
-					padding: 15px 0 20px 0;
-				}
-				&-button {
-					text-align: center;
-					a {
-						color: white;
-						font-weight: 500;
-						font-size: 20px;
-						line-height: 35px;
-						background: #072969;
-						border-radius: 10px;
-						padding: 12px 20px;
-					}
+					font-size: 20px;
+					line-height: 35px;
+					background: #072969;
+					border-radius: 10px;
+					padding: 12px 20px;
 				}
 			}
 		}
