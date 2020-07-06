@@ -948,12 +948,12 @@ body.lock {
 
 .slider .slick-arrow.slick-prev {
   left: -29px;
-  background: url("../img/slider/left.svg") 0 0/100% no-repeat;
+  background: url("/img/slider/left.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: -29px;
-  background: url("../img/slider/right.svg") 0 0/100% no-repeat;
+  background: url("/img/slider/right.svg") 0 0/100% no-repeat;
 }
 
 /* Точки (булиты) */

@@ -33,7 +33,7 @@ AppAsset::register($this);
                 <span></span>
             </div>
             <div class="header__burger-logo-image">
-                <picture><source srcset="/img/logo.webp" type="image/webp"><img src="/img/logo.png" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logo.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logo.png" alt="" /></picture>
             </div>
         </div>
 
@@ -47,14 +47,14 @@ AppAsset::register($this);
         <div class="header__content-contact">
             <div class="header__content-contact-phone">
                 <a href="tel:+79654619991">
-                    <picture><source srcset="/img/phone.webp" type="image/webp"><img src="/img/phone.png" alt="" /></picture>
+                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/phone.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/phone.png" alt="" /></picture>
                     <p>8(965)461-99-91</p>
                 </a>
             </div>
             <div class="header__content-contact-cart">
                 <a href="/site/cart.html">
                     <h4>12</h4>
-                    <picture><source srcset="/img/cart.webp" type="image/webp"><img src="/img/cart.png" alt="" /></picture>
+                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/cart.png" alt="" /></picture>
                     <p>5897<span> руб.</span></p>
                 </a>
             </div>
@@ -64,19 +64,19 @@ AppAsset::register($this);
 <section class="headerAfter">
     <div class="headerAfter__content">
         <div class="headerAfter__content-logo element">
-            <a href="/"><picture><source srcset="/img/logo.webp" type="image/webp"><img src="/img/logo.png" alt="" /></picture></a>
+            <a href="/"><picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logo.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logo.png" alt="" /></picture></a>
             <p>Магазин фурнитуры<br />для мягкой мебели</p>
         </div>
         <div class="headerAfter__content-location element">
-            <picture><source srcset="/img/map.webp" type="image/webp"><img src="/img/map.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/map.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/map.png" alt="" /></picture>
             <p>Краснодарский край, Отрадненский р-н,<br />ст. Отрадная, ул. Урупская 62г</p>
         </div>
         <div class="headerAfter__content-mail element">
-            <picture><source srcset="/img/mail.webp" type="image/webp"><img src="/img/mail.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/mail.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/mail.png" alt="" /></picture>
             <p><a href="mailto:shop-arcos@mail.ru">shop-arcos@mail.ru</a></p>
         </div>
         <div class="headerAfter__content-time element">
-            <picture><source srcset="/img/time.webp" type="image/webp"><img src="/img/time.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/time.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/time.png" alt="" /></picture>
             <p>Пн-Пт 8:00-18:00</p>
         </div>
         <div class="headerAfter__content-button">
@@ -92,30 +92,30 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="footer__content">
         <div class="footer__content-logo">
-            <picture><source srcset="/img/logoFooter.webp" type="image/webp"><img src="/img/logoFooter.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logoFooter.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logoFooter.png" alt="" /></picture>
         </div>
         <div class="footer__content-info">
             <div class="footer__content-info-item">
-                <picture><source srcset="/img/phone.svg" type="image/webp"><img src="/img/phone.svg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/phone.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/phone.svg" alt="" /></picture>
                 <p><a href="tel:+79654619991">8(965)461-99-91</a></p>
             </div>
             <div class="footer__content-info-item">
-                <picture><source srcset="/img/mail.svg" type="image/webp"><img src="/img/mail.svg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/mail.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/mail.svg" alt="" /></picture>
                 <p><a href="mailto:shop-arcos@mail.ru">shop-arcos@mail.ru</a></p>
             </div>
             <div class="footer__content-info-item social instBig">
                 <p>Мы в социальных сетях</p>
             </div>
             <div class="footer__content-info-item">
-                <picture><source srcset="/img/phone.svg" type="image/webp"><img src="/img/phone.svg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/phone.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/phone.svg" alt="" /></picture>
                 <p><a href="tel:+79186829999">8(918)682-99-99</a></p>
             </div>
             <div class="footer__content-info-item map">
-                <picture><source srcset="/img/map.svg" type="image/webp"><img src="/img/map.svg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/map.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/map.svg" alt="" /></picture>
                 <p>Краснодарский край, Отрадненский р-н, ст. Отрадная, ул. Урупская 62г</p>
             </div>
             <div class="footer__content-info-item social">
-                <picture><source srcset="/img/inst.svg" type="image/webp"><img src="/img/inst.svg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/inst.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/inst.svg" alt="" /></picture>
                 <p class="instMin">Мы в социальных сетях</p>
             </div>
         </div>
@@ -129,16 +129,16 @@ AppAsset::register($this);
     <nav class="menuShare">
         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
         <label class="menu-open-button" for="menu-open">
-            <picture><source srcset="/img/call/main.webp" type="image/webp"><img src="/img/call/main.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/call/main.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/call/main.png" alt="" /></picture>
         </label>
         <a class="menu-item phone_share_btn" href="tel:+79832693953">
-            <picture><source srcset="/img/call/call.webp" type="image/webp"><img src="/img/call/call.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/call/call.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/call/call.png" alt="" /></picture>
         </a>
         <a class="menu-item phone_share_btn" href="https://viber.click/79832693953">
-            <picture><source srcset="/img/call/viber.webp" type="image/webp"><img src="/img/call/viber.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/call/viber.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/call/viber.png" alt="" /></picture>
         </a>
         <a class="menu-item whatsapp_share_btn" href="https://wa.me/79832693953">
-            <picture><source srcset="/img/call/wats.webp" type="image/webp"><img src="/img/call/wats.png" alt="" /></picture>
+            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/call/wats.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/call/wats.png" alt="" /></picture>
         </a>
     </nav>
 </div>
@@ -152,13 +152,13 @@ AppAsset::register($this);
             <div class="popup__item">
                 <div class="popup__item-inpit">
                     <div class="inpit__image">
-                        <picture><source srcset="/img/popup/name.webp" type="image/webp"><img src="/img/popup/name.png" alt="" /></picture>
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popup/name.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/name.png" alt="" /></picture>
                     </div>
                     <input type="text" placeholder="Ваше имя" name="name-popup" id="name-popup" />
                 </div>
                 <div class="popup__item-inpit">
                     <div class="inpit__image">
-                        <picture><source srcset="/img/popup/phone.webp" type="image/webp"><img src="/img/popup/phone.png" alt="" /></picture>
+                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popup/phone.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/phone.png" alt="" /></picture>
                     </div>
                     <input type="tel" placeholder="Ваш телефон" name="phone-popup" id="phone-popup" />
                 </div>
