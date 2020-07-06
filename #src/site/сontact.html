@@ -4,7 +4,27 @@
 	<body class="wrapper">
 		@@include('../layouts/header.html') @@include('../layouts/headerAfter.html')
 		<main>
-			@@include('../layouts/main/map.html')
+			<section class="contact">
+				<div class="contact__content">
+					<div class="contact__content-form">
+						<h2>Контактная форма</h2>
+						<input type="text" placeholder="ФИО*" />
+						<input type="number" placeholder="Телефон*" />
+						<textarea placeholder="Сообщение*" name="message" id="" cols="30" rows="10"></textarea>
+						<div class="contact__content-form-btn">
+							<a href="#">Отправить сообщение</a>
+						</div>
+					</div>
+					<div class="contact__content-map">
+						<script
+							type="text/javascript"
+							charset="utf-8"
+							async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3c6dfc34a3ca6ed0381eab79173ef0c803857204cbc150cb42e93254088a270&amp;lang=ru_RU&amp;scroll=true"
+						></script>
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('../layouts/footer.html') @@include('../layouts/scriptFooter.html')
 	</body>

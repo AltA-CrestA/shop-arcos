@@ -1,0 +1,38 @@
+.aboutCompany {
+    &__content {
+        padding: 100px 15px 60px 15px;
+        max-width: 1320px;
+        margin: 0 auto;
+
+        h2 {
+            @extend %h2;
+        }
+        &-item {
+            @include disflex(flex, center, center);
+            &-left {
+                img {
+                    width: 453px;
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+                    border-radius: 50%;
+                }
+            }
+            &-right {
+                p {
+                    padding-left: 50px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 976px) {
+    .aboutCompany__content-item-left {
+        display: none;
+    }
+    .aboutCompany__content {
+        padding: 30px 15px 20px 15px;
+    }
+}
