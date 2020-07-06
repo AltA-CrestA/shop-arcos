@@ -1380,9 +1380,9 @@ body.lock {
 
 .aboutCompany__content-item-right p {
   padding-left: 50px;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 500;
+  font-weight: normal;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+  line-height: 35px;
 }
 
 .why__content {

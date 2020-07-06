@@ -7,8 +7,10 @@
         h2 {
             @extend %h2;
         }
+
         &-item {
             @include disflex(flex, center, center);
+
             &-left {
                 img {
                     width: 453px;
@@ -16,12 +18,13 @@
                     border-radius: 50%;
                 }
             }
+
             &-right {
                 p {
                     padding-left: 50px;
-                    font-size: 18px;
-                    line-height: 25px;
-                    font-weight: 500;
+                    font-weight: normal;
+                    @include adaptiv-fontAll(20, 14);
+                    line-height: 35px;
                 }
             }
         }
@@ -32,6 +35,7 @@
     .aboutCompany__content-item-left {
         display: none;
     }
+
     .aboutCompany__content {
         padding: 30px 15px 20px 15px;
     }
