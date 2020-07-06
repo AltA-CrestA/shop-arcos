@@ -1,33 +1,34 @@
-@import "mixins.scss";
-@import "plugins/animate.min.scss";
-@import "fonts";
-@import "_null";
-@import "view";
-@import "popup";
-@import "call";
-@import "header-footer/header.scss";
-@import "header-footer/headerAfter.scss";
-@import "header-footer/burger.scss";
-@import "mainPage/mainSection.scss";
-@import "mainPage/minButton.scss";
-@import "mainPage/popularItem.scss";
-@import "mainPage/stocks.scss";
-@import "mainPage/catalog.scss";
-@import "mainPage/map.scss";
-@import "mainPage/menu.scss";
-@import "menu/filter.scss";
-@import "menu/catalog.scss";
-@import "menu/product.scss";
-@import "contact/contact.scss";
-@import "cart/cart.scss";
-@import "header-footer/footer.scss";
+@import 'mixins.scss';
+@import 'plugins/animate.min.scss';
+@import 'fonts';
+@import '_null';
+@import 'view';
+@import 'popup';
+@import 'call';
+@import 'header-footer/header.scss';
+@import 'header-footer/headerAfter.scss';
+@import 'header-footer/burger.scss';
+@import 'mainPage/mainSection.scss';
+@import 'mainPage/minButton.scss';
+@import 'mainPage/popularItem.scss';
+@import 'mainPage/stocks.scss';
+@import 'mainPage/catalog.scss';
+@import 'mainPage/map.scss';
+@import 'mainPage/menu.scss';
+@import 'menu/filter.scss';
+@import 'menu/catalog.scss';
+@import 'menu/product.scss';
+@import 'contact/contact.scss';
+@import 'cart/cart.scss';
+@import 'cart/order.scss';
+@import 'header-footer/footer.scss';
 
 body {
-    font-family: Roboto;
+	font-family: Roboto;
 
-    background: #fbfbfb;
+	background: #fbfbfb;
 
-    a {
-        color: black;
-    }
+	a {
+		color: black;
+	}
 }
