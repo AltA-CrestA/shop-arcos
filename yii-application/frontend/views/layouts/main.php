@@ -4,9 +4,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
+use yii\helpers\Url;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
@@ -33,16 +31,16 @@ AppAsset::register($this);
                 <span></span>
             </div>
             <div class="header__burger-logo-image">
-                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logo.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logo.png" alt="" /></picture>
+                <a href="<?php echo Url::to(['site/index']); ?>"> <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logo.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logo.png" alt="" /></picture></a>
             </div>
         </div>
 
         <div class="header__content-menu">
-            <a href="#">О компании</a>
-            <a href="/site/menu.html">Каталог</a>
-            <a href="#">Акции</a>
-            <a href="#">Популярные товары</a>
-            <a href="/site/сontact.html">Контакты</a>
+            <a href="<?php echo Url::to(['site/index', '#' => 'aboutCompany']); ?>">О компании</a>
+            <a href="<?php echo Url::to(['catalog/index']); ?>">Каталог</a>
+            <a href="<?php echo Url::to(['site/index', '#' => 'stocks']); ?>">Акции</a>
+            <a href="<?php echo Url::to(['site/index', '#' => 'popularItem']); ?>">Популярные товары</a>
+            <a href="<?php echo Url::to(['site/contact']); ?>">Контакты</a>
         </div>
         <div class="header__content-contact">
             <div class="header__content-contact-phone">
@@ -52,7 +50,7 @@ AppAsset::register($this);
                 </a>
             </div>
             <div class="header__content-contact-cart">
-                <a href="/site/cart.html">
+                <a href="<?php echo Url::to(['cart/index']); ?>">
                     <h4>12</h4>
                     <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/cart.png" alt="" /></picture>
                     <p>5897<span> руб.</span></p>
@@ -65,7 +63,7 @@ AppAsset::register($this);
     <div class="headerAfter__content">
         <div class="headerAfter__content-logo element">
             <a href="/"><picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/logo.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/logo.png" alt="" /></picture></a>
-            <p>Магазин фурнитуры<br />для мягкой мебели</p>
+            <!-- <p>Магазин фурнитуры<br />для мягкой мебели</p> -->
         </div>
         <div class="headerAfter__content-location element">
             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/map.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/map.png" alt="" /></picture>

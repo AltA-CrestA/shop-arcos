@@ -11,8 +11,7 @@ use yii\base\Model;
 class ContactForm extends Model
 {
     public $name;
-    public $email;
-    public $subject;
+    public $phone;
     public $body;
     public $verifyCode;
 
@@ -54,7 +53,7 @@ class ContactForm extends Model
             ->setTo($email)
             ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
             ->setReplyTo([$this->email => $this->name])
-            ->setSubject($this->subject)
+            ->setSubject('Письмо с сайта')
             ->setTextBody($this->body)
             ->send();
     }

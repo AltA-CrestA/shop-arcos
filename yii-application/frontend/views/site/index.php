@@ -2,6 +2,8 @@
 
 /* @var $this yii\web\View */
 
+use yii\helpers\Url;
+
 $this->title = 'Главная — Shop-Arcos';
 ?>
 
@@ -24,7 +26,7 @@ $this->title = 'Главная — Shop-Arcos';
         <div class="goOver">
             <div class="goOver__content">
                 <h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
-                <a href="#">
+                <a href="<?php echo Url::to(['catalog/index']); ?>">
                     <p>Перейти в каталог</p>
                     <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
                 </a>
@@ -34,7 +36,7 @@ $this->title = 'Главная — Shop-Arcos';
     <section class="minButton">
         <div class="minButton__content">
             <div class="minButton__content-goOver">
-                <a href="#">Перейти в каталог</a>
+                <a href="<?php echo Url::to(['catalog/index']); ?>">Перейти в каталог</a>
             </div>
             <div class="minButton__content-call">
                 <a href="#popup" class="popup-link">Обратный звонок</a>
@@ -46,55 +48,55 @@ $this->title = 'Главная — Shop-Arcos';
         <div class="catalog__content">
             <h2>Каталог товаров</h2>
             <div class="catalog__content-grid">
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item one">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Пуговицы</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item two">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Наконечники</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item three">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Лентагвозди</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item four">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Нитки</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item five">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Подпятники</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item six">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Профиль ППУ</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item seven">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Кольца декоративные</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item eight">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Босонные изделия</p>
                     </a>
                 </div>
-                <div class="catalog__content-grid-item">
+                <div class="catalog__content-grid-item nine">
                     <a href="#">
                         <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
                         <p>Прочая фурнитура</p>
@@ -104,7 +106,7 @@ $this->title = 'Главная — Shop-Arcos';
         </div>
     </section>
     <section class="popularItem">
-        <div class="popularItem__content">
+        <div id="popularItem" class="popularItem__content">
             <h2>Популярные товары</h2>
             <div class="popularItem__content-slider">
                 <div class="popularItem__content-slider-buttons">
@@ -119,8 +121,8 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -131,8 +133,8 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -143,8 +145,8 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -155,8 +157,8 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -167,8 +169,9 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
+
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -179,8 +182,8 @@ $this->title = 'Главная — Shop-Arcos';
                     <div class="popularItem__content-slider-track-item">
                         <div class="popularItem__content-slider-track-item-product">
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -194,7 +197,7 @@ $this->title = 'Главная — Shop-Arcos';
     </section>
 
     <section class="stocks">
-        <div class="stocks__content">
+        <div id="stocks" class="stocks__content">
             <h2>Акции</h2>
             <div class="stocks__content-slider">
                 <div class="stocks__content-slider-buttons">
@@ -215,8 +218,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -233,8 +236,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -251,8 +254,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -269,8 +272,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -287,8 +290,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -305,8 +308,8 @@ $this->title = 'Главная — Shop-Arcos';
                                 </div>
                             </div>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/1.png" alt="" /></picture>
+                            <h4>Наименование товара</h4>
                             <h3>15 штук/упаковка</h3>
-                            <p class="discond">800<span> руб.</span></p>
                             <p>500<span> руб.</span></p>
                             <a href="#">
                                 <p>В корзину</p>
@@ -319,7 +322,7 @@ $this->title = 'Главная — Shop-Arcos';
         </div>
     </section>
     <section class="aboutCompany">
-        <div class="aboutCompany__content">
+        <div id="aboutCompany" class="aboutCompany__content">
             <h2>О компании</h2>
             <div class="aboutCompany__content-item">
                 <div class="aboutCompany__content-item-left">
@@ -327,13 +330,13 @@ $this->title = 'Главная — Shop-Arcos';
                 </div>
                 <div class="aboutCompany__content-item-right">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nobis sunt facere eaque,
-                        asperiores neque ipsum, dolorum consequatur eligendi blanditiis alias, debitis reiciendis
-                        aspernatur commodi tempore in error ad eius magnam illo nulla temporibus? Praesentium
-                        commodi quisquam, optio beatae distinctio reiciendis nemo illum laborum ullam vel fuga,
-                        eum aperiam quas pariatur sunt nulla dicta cum, ad explicabo tempore minima nihil dolorum
-                        ipsa sit. Quis labore facere, voluptatibus eum distinctio rem dolorem blanditiis dolores
-                        esse expedita voluptas nisi ducimus nulla soluta.
+                        Компания Основана в 2014 году, за это время смогли добиться максимального качества своих
+                        комплектующих, с широким ассортиментом, и наладить работу по всей России. Всегда следим за
+                        всеми новинками в мебельной сфере, работаем над разнообразием и качеством поставляемых
+                        комплектующих и стараемся держать всю фурнитуру в наличии. За время нашей работы,мы
+                        подобрали тесный круг надежных партнеров, которые поставляют нам качественную продукцию. В
+                        число наших клиентов входят как и мелкие мебельные предприятия, так и крупные
+                        производства.
                     </p>
                 </div>
             </div>
@@ -375,18 +378,18 @@ $this->title = 'Главная — Shop-Arcos';
                 </div>
                 <div class="why__content-item-flex why__flex__second">
                     <div class="why__content-item-flex-box">
-                        <div class="why__content-item-flex-box-icon">
+                        <div class="why__content-item-flex-box-icon flex__start">
                             <h3>Профессионализм</h3>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/job.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/job.png" alt="" /></picture>
                         </div>
-                        <p>Все наши сотрудники - специалисты своего дела</p>
+                        <p class="left_t">Все наши сотрудники - специалисты своего дела</p>
                     </div>
                     <div class="why__content-item-flex-box">
-                        <div class="why__content-item-flex-box-icon">
+                        <div class="why__content-item-flex-box-icon flex__start">
                             <h3>Качество</h3>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/why/quality.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/why/quality.png" alt="" /></picture>
                         </div>
-                        <p>
+                        <p class="left_t">
                             Мы ручаемся за качество, так как сами используем нашу фурнитуру в нашей мебельной
                             фабрике
                         </p>
