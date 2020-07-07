@@ -2,11 +2,20 @@
 
 namespace frontend\controllers;
 
-class CatalogController extends \yii\web\Controller
+use frontend\models\Product;
+use Yii;
+use yii\web\Controller;
+
+class CatalogController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $condition = ['status' => Yii::$app->params['enableStatus']];
+        $productList = Product::find()->where($condition)->orderBy('id')->all();
+
+        return $this->render('index', [
+            'productList' => $productList,
+        ]);
     }
 
 }
