@@ -10,6 +10,7 @@
         &-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+
             grid-gap: 70px 5%;
             &-item {
                 a {
@@ -37,19 +38,14 @@
     }
 }
 
-@media (max-width: 1140px) {
-    .catalog__content-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px 5%;
-    }
-}
-
 @media (max-width: 976px) {
     .catalog__content {
         padding: 30px 15px 20px 15px;
     }
     .catalog__content-grid {
         grid-template-columns: repeat(2, 1fr);
+
+        grid-gap: 50px 5%;
     }
     .catalog__content-grid-item {
         p {

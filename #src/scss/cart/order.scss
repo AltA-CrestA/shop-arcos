@@ -7,14 +7,14 @@
 			display: flex;
 			p {
 				font-weight: 500;
-				@include adaptiv-fontAll(16, 14);
+				@include adaptiv-fontAll(16, 12);
 				line-height: 30px;
 				color: #c4c4c4;
 				padding: 0 10px;
 			}
 			a {
 				font-weight: 500;
-				@include adaptiv-fontAll(16, 14);
+				@include adaptiv-fontAll(16, 12);
 				line-height: 30px;
 				color: #c4c4c4;
 			}
@@ -164,6 +164,11 @@
 		flex-direction: column;
 		a {
 			margin-top: 20px;
+		}
+	}
+	.order__content {
+		h2 {
+			padding: 10px 0;
 		}
 	}
 }
