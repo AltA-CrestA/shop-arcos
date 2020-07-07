@@ -24,7 +24,7 @@
                     p {
                         padding-left: 1vw;
                         font-weight: 500;
-                        @include adaptiv-font(18, 16);
+                        @include adaptiv-font(18, 14);
                         line-height: 20px;
                     }
                     transition: 0.1s ease-in-out;
@@ -65,7 +65,7 @@
 
     .catalog__content-grid-item {
         img {
-            width: 80px;
+            width: 60px;
         }
     }
 }
@@ -79,7 +79,7 @@
         width: 100%;
         a {
             img {
-                width: 60px;
+                width: 50px;
             }
         }
     }

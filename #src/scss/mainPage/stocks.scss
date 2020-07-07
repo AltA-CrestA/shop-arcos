@@ -1,32 +1,108 @@
-.stocks {
-    &__content {
-        padding: 100px 20px 20px 0px;
-        max-width: 1120px;
-        margin: 0 auto;
+%slider__content {
+    padding: 100px 20px 20px 0px;
+    max-width: 1120px;
+    margin: 0 auto;
+    h2 {
+        @extend %h2;
+    }
+}
 
-        h2 {
-            @extend %h2;
+%slider__slider {
+    overflow: hidden;
+}
+
+%slider__track {
+    @include disflex(flex, stretch, center);
+    transition: 0.2s;
+}
+
+%slider__product {
+    @include disflex(flex, center, center);
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 26px 10px;
+    width: 250px;
+    position: relative;
+    img {
+        width: 160px;
+        border-radius: 50px;
+    }
+    h3 {
+        padding: 45px 0 6px 0px;
+        font-weight: 500;
+        @include adaptiv-fontAll(12, 10);
+        line-height: 14px;
+        color: #c4c4c4;
+    }
+    .discond {
+        font-weight: 500;
+        @include adaptiv-fontAll(12, 10);
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-decoration-line: line-through;
+    }
+    p {
+        font-weight: 500;
+        @include adaptiv-fontAll(18, 14);
+        line-height: 21px;
+    }
+    a {
+        margin-top: 10px;
+        background: rgb(6, 42, 105);
+        box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
+        border-radius: 50px;
+        padding: 10px 20px;
+        @include disflex(flex, center, center);
+        p {
+            @include adaptiv-fontAll(14, 12);
+            color: white;
+            padding-right: 15px;
         }
 
-        &-slider {
-            overflow: hidden;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
 
+%slider__btns {
+    text-align: end;
+    font-size: 0;
+    padding-bottom: 26px;
+}
+
+%slider__btnsPrev {
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+%slider__btnsNext {
+    transform: rotate(180deg);
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 8%;
+}
+
+.stocks {
+    &__content {
+        @extend %slider__content;
+        &-slider {
+            @extend %slider__slider;
             &-track {
-                @include disflex(flex, stretch, center);
-                transition: 0.2s;
+                @extend %slider__track;
 
                 &-item {
                     padding: 0px 0px 20px 20px;
 
                     &-product {
-                        @include disflex(flex, center, center);
-                        flex-direction: column;
-                        background: #ffffff;
-                        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
-                        border-radius: 5px;
-                        padding: 26px 10px;
-                        width: 250px;
-                        position: relative;
+                        @extend %slider__product;
 
                         .rebate {
                             width: 100%;
@@ -60,76 +136,19 @@
                             color: white;
                             font-size: 15px;
                         }
-
-                        img {
-                            width: 160px;
-                            border-radius: 50px;
-                        }
-
-                        h3 {
-                            padding: 45px 0 6px 0px;
-                            font-weight: 500;
-                            @include adaptiv-fontAll(12, 10);
-                            line-height: 14px;
-                            color: #c4c4c4;
-                        }
-
-                        .discond {
-                            font-weight: 500;
-                            @include adaptiv-fontAll(12, 10);
-                            line-height: 14px;
-                            display: flex;
-                            align-items: center;
-                            text-decoration-line: line-through;
-                        }
-
-                        p {
-                            font-weight: 500;
-                            @include adaptiv-fontAll(18, 14);
-                            line-height: 21px;
-                        }
-
-                        a {
-                            margin-top: 10px;
-                            background: rgb(6, 42, 105);
-                            box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
-                            border-radius: 50px;
-                            padding: 10px 20px;
-                            @include disflex(flex, center, center);
-
-                            p {
-                                @include adaptiv-fontAll(14, 12);
-                                color: white;
-                                padding-right: 15px;
-                            }
-
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
-                        }
                     }
                 }
             }
 
             &-buttons {
-                text-align: end;
-                font-size: 0;
-                padding-bottom: 26px;
+                @extend %slider__btns;
 
                 &-prev {
-                    padding: 10px 15px;
-                    background-color: white;
-                    border-radius: 15px;
-                    margin-right: 20px;
+                    @extend %slider__btnsPrev;
                 }
 
                 &-next {
-                    transform: rotate(180deg);
-                    padding: 10px 15px;
-                    background-color: white;
-                    border-radius: 15px;
-                    margin-right: 8%;
+                    @extend %slider__btnsNext;
                 }
             }
         }

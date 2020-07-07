@@ -1,135 +1,28 @@
 .popularItem {
     &__content {
-        padding: 100px 20px 20px 0px;
-        max-width: 1120px;
-        margin: 0 auto;
-
-        h2 {
-            @extend %h2;
-        }
-
+        @extend %slider__content;
         &-slider {
-            overflow: hidden;
-
+            @extend %slider__slider;
             &-track {
-                @include disflex(flex, stretch, center);
-                transition: 0.2s;
-
+                @extend %slider__track;
                 &-item {
                     padding: 0px 0px 20px 20px;
 
                     &-product {
-                        @include disflex(flex, center, center);
-                        flex-direction: column;
-                        background: #ffffff;
-                        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
-                        border-radius: 5px;
-                        padding: 26px 10px;
-                        width: 250px;
-                        position: relative;
-
-                        .rebate {
-                            width: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            &__content {
-                                position: relative;
-                                width: 69px;
-                                height: 67px;
-                                @include disflex(flex, center, center);
-                                img {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 69px;
-                                    height: 67px;
-                                    border-radius: 0px;
-                                }
-                                p {
-                                    position: absolute;
-                                    padding-right: 6px;
-                                    color: white;
-                                }
-                            }
-                        }
-                        .rebate__sum {
-                            position: absolute;
-                            top: 18px;
-                            left: 0px;
-                            color: white;
-                            font-size: 15px;
-                        }
-
-                        img {
-                            width: 160px;
-                            border-radius: 50px;
-                        }
-
-                        h3 {
-                            padding: 45px 0 6px 0px;
-                            font-weight: 500;
-                            font-size: 12px;
-                            line-height: 14px;
-                            color: #c4c4c4;
-                        }
-
-                        .discond {
-                            font-weight: 500;
-                            font-size: 12px;
-                            line-height: 14px;
-                            display: flex;
-                            align-items: center;
-                            text-decoration-line: line-through;
-                        }
-
-                        p {
-                            font-weight: 500;
-                            font-size: 18px;
-                            line-height: 21px;
-                        }
-
-                        a {
-                            margin-top: 10px;
-                            background: rgb(6, 42, 105);
-                            box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
-                            border-radius: 50px;
-                            padding: 12px 21px;
-                            @include disflex(flex, center, center);
-
-                            p {
-                                font-size: 14px;
-                                color: white;
-                                padding-right: 15px;
-                            }
-
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
-                        }
+                        @extend %slider__product;
                     }
                 }
             }
 
             &-buttons {
-                text-align: end;
-                font-size: 0;
-                padding-bottom: 26px;
+                @extend %slider__btns;
 
                 &-prev {
-                    padding: 10px 15px;
-                    background-color: white;
-                    border-radius: 15px;
-                    margin-right: 20px;
+                    @extend %slider__btnsPrev;
                 }
 
                 &-next {
-                    transform: rotate(180deg);
-                    padding: 10px 15px;
-                    background-color: white;
-                    border-radius: 15px;
-                    margin-right: 8%;
+                    @extend %slider__btnsNext;
                 }
             }
         }
