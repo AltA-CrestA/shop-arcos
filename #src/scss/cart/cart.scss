@@ -63,7 +63,7 @@
 				&-main {
 					@include disflex(flex, stretch, center);
 					img {
-						width: 10vw;
+						width: 100px;
 						border-radius: 50px;
 						margin-right: 3vw;
 					}
@@ -137,6 +137,13 @@
 				padding: 10px 0;
 			}
 			&-cart {
+				&-product {
+					&-main {
+						img {
+							width: 40px;
+						}
+					}
+				}
 				&-total {
 					p {
 						padding: 10px 0 0px 0;
