@@ -18,4 +18,15 @@ class CatalogController extends Controller
         ]);
     }
 
+    public function actionCategory($categoryId)
+    {
+        $condition = ['status' => Yii::$app->params['enableStatus']];
+        $condition2 = ['category_id' => $categoryId];
+        $productList = Product::find()->where($condition)->andWhere($condition2)->orderBy('id')->all();
+
+        return $this->render('category', [
+            'productList' => $productList,
+        ]);
+    }
+
 }
