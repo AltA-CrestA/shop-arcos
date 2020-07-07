@@ -1,6 +1,6 @@
 .mainSection {
 	padding: 0px 30px;
-	max-width: 1350px;
+	max-width: 1150px;
 	margin: 0px auto;
 	position: relative;
 }
@@ -30,25 +30,26 @@
 
 		h2 {
 			font-weight: bold;
-			@include adaptiv-fontAll(35, 20);
+			@include adaptiv-fontAll(30, 20);
 			line-height: 47px;
-			margin-bottom: 35px;
+			margin-bottom: 20px;
 		}
 
 		a {
 			background: rgb(6, 42, 105);
 			box-shadow: 0px 4px 4px rgba(6, 42, 105, 0.25);
 			border-radius: 50px;
-			padding: 15px 25px;
+			padding: 5px 20px;
 			@include disflex(flex, center, center);
 
 			p {
 				color: white;
-				padding-right: 24px;
-				@include adaptiv-fontAll(20, 14);
+				padding-right: 10px;
+				@include adaptiv-fontAll(16, 14);
 			}
 
 			img {
+				margin-top: 5px;
 				width: 25px;
 				height: 25px;
 			}
@@ -81,7 +82,7 @@
 	position: relative;
 
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -106,12 +107,12 @@
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
 	left: -29px;
-	background: url('../img/slider/left.svg') 0 0 / 100% no-repeat;
+	background: url("../img/slider/left.svg") 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
 	right: -29px;
-	background: url('../img/slider/right.svg') 0 0 / 100% no-repeat;
+	background: url("../img/slider/right.svg") 0 0 / 100% no-repeat;
 }
 
 /* Точки (булиты) */

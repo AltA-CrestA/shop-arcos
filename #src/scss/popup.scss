@@ -52,13 +52,13 @@ body.lock {
     h2 {
         font-style: normal;
         font-weight: 500;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 40px;
         padding: 0 10px 7px 10px;
     }
     p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         color: #cdcdcd;
     }
@@ -72,7 +72,7 @@ body.lock {
     background-color: white;
     border-radius: 50%;
     padding: 0px 7px;
-    font-size: 30px;
+    font-size: 28px;
     color: black;
     transition: 0.1s ease-in-out;
     &:hover {
@@ -81,7 +81,7 @@ body.lock {
 }
 
 .popup__item {
-    max-width: 430px;
+    max-width: 400px;
     &-inpit {
         display: flex;
         justify-content: center;
@@ -103,12 +103,12 @@ body.lock {
         input {
             padding-left: 16px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 23px;
 
             &::placeholder {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 23px;
                 color: #ebebea;
             }
@@ -121,14 +121,14 @@ body.lock {
         button {
             width: 100%;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 20px;
             color: white;
             background: #072969;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
             border-radius: 50px;
             border: 1px solid #072969;
-            padding: 15px 40px;
+            padding: 12px 40px;
             transition: 0.2s all;
 
             &:hover {
@@ -139,7 +139,7 @@ body.lock {
     }
     p {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 23px;
     }
 }

@@ -1,7 +1,7 @@
 .catalog {
     &__content {
         padding: 100px 15px 60px 15px;
-        max-width: 1320px;
+        max-width: 1120px;
         margin: 0 auto;
 
         h2 {
@@ -10,7 +10,7 @@
         &-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 102px 5%;
+            grid-gap: 70px 5%;
             &-item {
                 a {
                     padding: 0 10px 0 0;
@@ -19,12 +19,12 @@
                     background: #ffffff;
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
                     img {
-                        width: 138px;
+                        width: 100px;
                     }
                     p {
-                        padding-left: 2vw;
+                        padding-left: 1vw;
                         font-weight: 500;
-                        @include adaptiv-font(20, 16);
+                        @include adaptiv-font(18, 16);
                         line-height: 20px;
                     }
                     transition: 0.1s ease-in-out;
@@ -40,7 +40,7 @@
 @media (max-width: 1140px) {
     .catalog__content-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 60px 5%;
+        grid-gap: 50px 5%;
     }
 }
 
@@ -65,17 +65,22 @@
 
     .catalog__content-grid-item {
         img {
-            width: 100px;
+            width: 80px;
         }
     }
 }
 
 @media (max-width: 576px) {
     .catalog__content-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
     .catalog__content-grid-item {
-        width: 80%;
+        width: 100%;
+        a {
+            img {
+                width: 60px;
+            }
+        }
     }
 }
