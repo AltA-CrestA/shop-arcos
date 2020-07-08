@@ -42,6 +42,10 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'category/<categoryId:\d+>' => 'catalog/category',
+                'catalog' => 'catalog/index',
+                'contact' => 'site/contact',
+                'cart' => 'cart/index',
+                '/' => 'site/index',
             ],
         ],
     ],
