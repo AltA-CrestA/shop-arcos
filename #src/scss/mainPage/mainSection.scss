@@ -115,6 +115,15 @@
 	background: url("../img/slider/right.svg") 0 0 / 100% no-repeat;
 }
 
+@media (max-width: 1190px) {
+	.slider .slick-arrow.slick-prev {
+		left: 2px;
+	}
+	.slider .slick-arrow.slick-next {
+		right: 2px;
+	}
+}
+
 /* Точки (булиты) */
 .slick-dots {
 	position: absolute;

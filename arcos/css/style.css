@@ -759,7 +759,7 @@ body.lock {
   display: none;
   position: absolute;
   content: "Пн-Пт 8:00-18:00 ";
-  bottom: -50%;
+  bottom: -70%;
   right: 0;
   font-size: calc(12px + 4 * ((100vw - 976px) / 944));
   line-height: 19px;
@@ -2194,6 +2194,16 @@ body a {
 
   .why__content-item-flex-box p {
     text-align: center;
+  }
+}
+
+@media (max-width: 1190px) {
+  .slider .slick-arrow.slick-prev {
+    left: 2px;
+  }
+
+  .slider .slick-arrow.slick-next {
+    right: 2px;
   }
 }
 

@@ -2,7 +2,7 @@ let position1 = 0;
 let slidsToShow1;
 
 if (matchMedia) {
-	let screen1 = window.matchMedia('(max-width:976px)');
+	let screen1 = window.matchMedia('(max-width:600px)');
 	screen1.addListener(changes1);
 	changes1(screen1);
 }
