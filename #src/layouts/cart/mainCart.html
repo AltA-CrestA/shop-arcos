@@ -19,7 +19,7 @@
 						<p>Наконечник "Элита"</p>
 						<div class="mainCart__content-cart-product-main-title-how">
 							<p>Кол-во</p>
-							<input type="number" />
+							<p class="how">12</p>
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 						<p>Наконечник "Элита"</p>
 						<div class="mainCart__content-cart-product-main-title-how">
 							<p>Кол-во</p>
-							<input type="number" />
+							<p class="how">12</p>
 						</div>
 					</div>
 				</div>
@@ -51,7 +51,17 @@
 				<p class="sum">7200<span> руб.</span></p>
 			</div>
 			<div class="mainCart__content-cart-btn">
-				<a href="/site/order.html">Подтвердить заказ</a>
+				<p>Что то забыли? <a href="/menu">Нажмите, чтобы вернутсья</a></p>
+				<div class="mainCart__content-cart-btn-item">
+					<form action="/cart" method="post">
+						<button type="submit" class="clear" name="clear" value="clear">
+							Очистить корзину
+						</button>
+						<button type="submit" class="next" name="order" value="order">
+							Подтвердить заказ
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
