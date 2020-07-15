@@ -3,6 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use frontend\models\Cart;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use frontend\assets\AppAsset;
@@ -51,9 +52,9 @@ AppAsset::register($this);
             </div>
             <div class="header__content-contact-cart">
                 <a href="<?php echo Url::to(['cart/index']); ?>">
-                    <h4>12</h4>
+                    <h4 id="cart-count-qty"><?= Cart::countQuantity(); ?></h4>
                     <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/cart.png" alt="" /></picture>
-                    <p>5897<span> руб.</span></p>
+                    <p id="cart-count-sum"><?= Cart::countSum(); ?><span> руб.</span></p>
                 </a>
             </div>
         </div>

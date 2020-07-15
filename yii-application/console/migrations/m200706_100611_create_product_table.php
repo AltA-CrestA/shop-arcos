@@ -33,8 +33,8 @@ class m200706_100611_create_product_table extends Migration
             'package' => $this->string(),
             'description' => $this->text(),
             'is_sale' => $this->integer(),
-            'old_price' => $this->float(),
-            'price' => $this->float(),
+            'old_price' => $this->decimal(10,2),
+            'price' => $this->decimal(10,2),
             'is_recommended' => $this->integer(),
             'status' => $this->integer()->defaultValue(1),
         ]);

@@ -2,6 +2,8 @@
 /* @var $this yii\web\View */
 
 use frontend\widgets\categoryList\CategoryList;
+use yii\helpers\Url;
+use yii\web\JqueryAsset;
 
 ?>
 <main>
@@ -39,7 +41,7 @@ use frontend\widgets\categoryList\CategoryList;
                             <h4><?php echo $product->name; ?></h4>
                             <h3><?php echo $product->package; ?></h3>
                             <p><?php echo $product->price; ?><span> руб.</span></p>
-                            <a href="#">
+                            <a class="add-to-cart" data-id="<?= $product->id; ?>" href="<?= Url::to(['cart/add', 'id' => $product->id]); ?>">
                                 <p>В корзину</p>
                                 <img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" />
                             </a>
@@ -50,3 +52,7 @@ use frontend\widgets\categoryList\CategoryList;
         </div>
     </section>
 </main>
+
+<?php $this->registerJsFile('@web/js/addToCart.js', [
+    'depends' => JqueryAsset::className()
+]);
