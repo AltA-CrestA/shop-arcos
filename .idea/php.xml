@@ -86,6 +86,8 @@
       <path value="$PROJECT_DIR$/yii-application/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/yii-application/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/yii-application/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/yii-application/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/yii-application/vendor/paragonie/random_compat" />
     </include_path>
   </component>
 </project>
