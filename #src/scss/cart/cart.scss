@@ -114,9 +114,11 @@
 				}
 			}
 			&-btn {
-				text-align: end;
+				@include disflex(flex, space-between, flex-start);
 				padding-top: 50px;
-				a {
+				p {
+				}
+				.next {
 					color: white;
 					font-weight: 500;
 					@include adaptiv-fontAll(16, 14);
