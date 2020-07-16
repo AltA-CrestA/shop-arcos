@@ -41,7 +41,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'category/<categoryId:\d+>' => 'catalog/category',
+                'catalog/category/<categoryId:\d+>' => 'catalog/category',
+                'catalog/product/<id:\d+>' => 'catalog/product',
                 'catalog' => 'catalog/index',
                 'contact' => 'site/contact',
                 'cart' => 'cart/index',

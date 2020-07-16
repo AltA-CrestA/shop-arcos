@@ -15,7 +15,7 @@ use yii\web\JqueryAsset;
             </div>
             <div class="filter__content-item">
                 <div class="filter__content-item-link">
-                    <?php echo CategoryList::widget(); ?>
+                    <?= CategoryList::widget(); ?>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@ use yii\web\JqueryAsset;
     <section class="catalogItem">
         <div class="catalogItem__content">
             <div class="catalogItem__content-title">
-                <h5>Название категории <span>16</span></h5>
+                <h5><?= $categoryName->name; ?> <span><?= $counter; ?></span></h5>
                 <div class="catalogItem__content-title-btn">
                     <a href="#" id="buttonFilterMini">
                         Кнопка
@@ -32,13 +32,13 @@ use yii\web\JqueryAsset;
             </div>
             <div class="catalogItem__content-item">
                 <div class="catalogItem__content-item-filter">
-                    <?php echo CategoryList::widget(); ?>
+                    <?= CategoryList::widget(); ?>
                 </div>
                 <div class="catalogItem__content-item-grid">
                     <?php foreach ($productList as $product): ?>
                         <div class="catalogItem__content-item-grid-product">
-                            <img src="<?php echo Yii::getAlias('@img'); ?>/catalog/<?php echo $product->img; ?>" alt="" />
-                            <h4><?php echo $product->name; ?></h4>
+                            <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/<?php echo $product->img; ?>" alt="" /></a>
+                            <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><h4><?php echo $product->name; ?></h4></a>
                             <h3><?php echo $product->package; ?></h3>
                             <p><?php echo $product->price; ?><span> руб.</span></p>
                             <a class="add-to-cart" data-id="<?= $product->id; ?>" href="<?= Url::to(['cart/add', 'id' => $product->id]); ?>">
