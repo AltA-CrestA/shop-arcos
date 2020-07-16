@@ -22,10 +22,16 @@
 			@include adaptiv-fontAll(30, 22);
 			line-height: 59px;
 		}
+
+		h3 {
+			text-align: center;
+			@include adaptiv-fontAll(30, 18);
+			padding: 10vh 0;
+		}
 		&-cart {
 			&-name {
 				display: grid;
-				grid-template-columns: 49% 27% 22% 2%;
+				grid-template-columns: 51% 15% 15% 15% 4%;
 				position: relative;
 				&::after {
 					position: absolute;
@@ -39,7 +45,7 @@
 				}
 				p {
 					font-weight: 500;
-					@include adaptiv-fontAll(18, 12);
+					@include adaptiv-fontAll(18, 10);
 					line-height: 30px;
 					color: #c4c4c4;
 				}
@@ -47,7 +53,7 @@
 			&-product {
 				padding: 22px 0 18px 0;
 				display: grid;
-				grid-template-columns: 49% 27% 22% 2%;
+				grid-template-columns: 51% 15% 15% 15% 4%;
 				align-items: center;
 				position: relative;
 				&::after {
@@ -70,7 +76,7 @@
 					&-title {
 						p {
 							font-weight: 500;
-							@include adaptiv-fontAll(18, 10);
+							@include adaptiv-fontAll(18, 9);
 							line-height: 12px;
 							padding-bottom: 5px;
 						}
@@ -79,15 +85,10 @@
 							flex-wrap: wrap;
 							p {
 								font-weight: 500;
-								@include adaptiv-fontAll(16, 10);
+								@include adaptiv-fontAll(16, 9);
 
 								color: #c4c4c4;
 								padding-right: 5px;
-							}
-							.how {
-								font-weight: 500;
-								@include adaptiv-fontAll(16, 10);
-								color: #c4c4c4;
 							}
 						}
 					}
@@ -95,20 +96,20 @@
 			}
 			.sum {
 				font-weight: 500;
-				@include adaptiv-fontAll(18, 10);
+				@include adaptiv-fontAll(18, 9);
 				line-height: 28px;
 			}
 			.delete {
-				@include adaptiv-fontAll(30, 25);
+				@include adaptiv-fontAll(30, 20);
 			}
 			&-total {
 				display: grid;
-				grid-template-columns: 76% 22% 2%;
+				grid-template-columns: 81% 15% 4%;
 				align-items: center;
 				p {
 					padding: 30px 0 0px 0;
 					font-weight: 500;
-					@include adaptiv-fontAll(18, 11);
+					@include adaptiv-fontAll(18, 10);
 					line-height: 26px;
 				}
 			}
@@ -116,7 +117,7 @@
 				@include disflex(flex, space-between, flex-start);
 				margin-top: 40px;
 				p {
-					@include adaptiv-fontAll(16, 12);
+					@include adaptiv-fontAll(16, 10);
 
 					a {
 						color: rgb(37, 78, 122);

@@ -56,7 +56,7 @@ $this->title = 'Корзина — Shop-Arcos';
                 </div>
                 <div class="mainCart__content-cart-btn">
                     <p>Что то забыли? <a href="<?= Url::to(['catalog/index'])?>">Нажмите, чтобы вернутсья</a></p>
-                    <div class="cart__content-cart-btn-item">
+                    <div class="mainCart__content-cart-btn-item">
                         <?= Html::beginForm(['cart/index'], 'post'); ?>
                         <?= Html::submitButton('Очистить корзину', ['class' => 'clear', 'value' => 'clear', 'name' => 'clear']); ?>
                         <?= Html::submitButton('Подтвердить заказ', ['class' => 'next', 'value' => 'order', 'name' => 'order']); ?>

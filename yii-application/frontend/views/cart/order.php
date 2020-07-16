@@ -54,7 +54,7 @@ use yii\widgets\MaskedInput; ?>
             <div class="order__content-btn">
                 <div class="order__content-btn-grid">
                     <div class="order__content-btn-grid-checkbox">
-                        <?= Html::checkbox('checkbox', false, ['label' => 'Я согласен с ' . Html::a('политикой кондефициальности', ['site/policy'])]) ?>
+                        <?= Html::checkbox('checkbox', false, ['label' => 'Я согласен с&nbsp;' . Html::a('политикой кондефициальности', ['site/policy'])]) ?>
                     </div>
                     <?= Html::submitButton('Подтвердить заказ')?>
                 </div>
