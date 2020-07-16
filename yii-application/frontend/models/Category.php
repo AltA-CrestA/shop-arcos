@@ -2,7 +2,7 @@
 
 namespace frontend\models;
 
-use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "category".
@@ -12,7 +12,7 @@ use Yii;
  * @property string|null $img
  * @property int|null $status
  */
-class Category extends \yii\db\ActiveRecord
+class Category extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -22,16 +22,36 @@ class Category extends \yii\db\ActiveRecord
         return 'category';
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function attributeLabels()
+    public static function byStyleCssWeUnited($id)
     {
-        return [
-            'id' => 'ID',
-            'name' => 'Name',
-            'img' => 'Img',
-            'status' => 'Status',
-        ];
+        switch ($id) {
+            case 1:
+                echo 'one';
+                break;
+            case 2:
+                echo 'two';
+                break;
+            case 3:
+                echo 'three';
+                break;
+            case 4:
+                echo 'four';
+                break;
+            case 5:
+                echo 'five';
+                break;
+            case 6:
+                echo 'six';
+                break;
+            case 7:
+                echo 'seven';
+                break;
+            case 8:
+                echo 'eight';
+                break;
+            case 9:
+                echo 'nine';
+                break;
+        }
     }
 }

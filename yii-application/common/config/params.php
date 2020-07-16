@@ -6,4 +6,6 @@ return [
     'senderName' => 'shop-arcos.ru mailer',
     'user.passwordResetTokenExpire' => 3600,
     'enableStatus' => 1,
+    'recommendedProduct' => 1,
+    'saleProduct' => 1,
 ];

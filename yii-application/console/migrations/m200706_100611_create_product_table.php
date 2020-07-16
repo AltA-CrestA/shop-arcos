@@ -55,6 +55,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '200 шт/упаковка',
             'description' => 'Акрил-прозрачный пластик основа металлическая',
             'price' => '2.42',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -82,6 +83,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '1000 шт/упаковка',
             'description' => 'Стеклянная прозрачная ограненная вставка,основа металлическая ,отпускается кратно пачки',
             'price' => '3.95',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -181,6 +183,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '15 шт/упаковка',
             'description' => 'Плетеная нить толщиной 1мм ,материал-полипропилен,намотка 1800м ,производство Белорусь,отпускается штучно',
             'price' => '660.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -189,6 +192,8 @@ class m200706_100611_create_product_table extends Migration
             'img' => '7.jpg',
             'package' => '200 шт/упаковка',
             'description' => 'Материал - пластик, диаметр пуговицы 30мм,цвет золото,хром,жемчуг.отпускается штучно',
+            'is_sale' => 1,
+            'old_price' => '6.20',
             'price' => '4.75',
         ]);
 
@@ -207,6 +212,8 @@ class m200706_100611_create_product_table extends Migration
             'img' => '9.jpg',
             'package' => '50 шт/упаковка',
             'description' => 'Длинна планки 1м,материалл-металл. Цвета: Серебро,бронза,ренессанс,античное золото,золото классик.Опускается от 50шт,гвозди в комплекте.',
+            'is_sale' => 1,
+            'old_price' => '72.00',
             'price' => '54.00',
         ]);
 
@@ -217,6 +224,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '50 шт/упаковка',
             'description' => 'Длинна планки 1м,материалл-металл.Цвета: Серебро,бронза,ренессанс,,золото классик.Опускается от 50шт,гвозди в комплекте.',
             'price' => '57.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -287,6 +295,8 @@ class m200706_100611_create_product_table extends Migration
             'img' => '16.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: бронза, серебро, золото. Материал — металл. Размер изделия: Высота 30мм диаметр 31мм',
+            'is_sale' => 1,
+            'old_price' => '165.00',
             'price' => '140.00',
         ]);
 
@@ -360,6 +370,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: бронза,серебро,золото. Материал — металл. Диаметр внутренний 60 мм, наружний 80 мм. Толщина кольца 10мм.',
             'price' => '385.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -422,6 +433,8 @@ class m200706_100611_create_product_table extends Migration
             'img' => '32.jpg',
             'package' => '20 шт/упаковка',
             'description' => 'В упаковке 20 шт, цветной и белый отдельными упаковками. Отпускается кратно упаковки.',
+            'is_sale' => 1,
+            'old_price' => '82.00',
             'price' => '66.00',
         ]);
 
@@ -450,6 +463,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '1 шт/упаковка',
             'description' => 'Стальная лента с зубзами для фиксации ткани. Образует аккуратный незаметный шов на изделии. Отпускается бабинами.',
             'price' => '660.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -485,7 +499,10 @@ class m200706_100611_create_product_table extends Migration
             'img' => '40.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Светодиодная акриловая страза мощностью 0.1w диаметром 30мм отпускается штучно.',
+            'is_sale' => 1,
+            'old_price' => '146.00',
             'price' => '124.00',
+
         ]);
 
         $this->insert('product', [
@@ -504,6 +521,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: Серебро, золото. Материал-металл. Размер Изделия: высота 56 мм диаметр 29 мм.',
             'price' => '182.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [
@@ -513,6 +531,7 @@ class m200706_100611_create_product_table extends Migration
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: Серебро, золото. Материал-металл. Размер Изделия: высота 103 мм диаметр 30 мм.',
             'price' => '231.00',
+            'is_recommended' => 1,
         ]);
 
         $this->insert('product', [

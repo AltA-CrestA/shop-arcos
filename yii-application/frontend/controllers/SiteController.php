@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\Category;
 use Yii;
 use yii\web\Controller;
 use frontend\models\ContactForm;
@@ -34,7 +35,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $condition = ['status' => Yii::$app->params['enableStatus']];
+        $categoryList = Category::find()->where($condition)->orderBy('id')->all();
+
+        return $this->render('index', [
+            'categoryList' => $categoryList,
+        ]);
     }
 
 
