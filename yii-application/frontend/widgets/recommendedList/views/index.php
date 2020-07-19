@@ -23,7 +23,7 @@ use yii\helpers\Url;
                         <h4><?= $item->name; ?></h4>
                         <h3><?= $item->package; ?></h3>
                         <p><?= $item->price; ?><span> руб.</span></p>
-                        <a href="#">
+                        <a class="add-to-cart" data-id="<?= $item->id; ?>" href="<?= Url::to(['cart/add', 'id' => $item->id]); ?>">
                             <p>В корзину</p>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
                         </a>

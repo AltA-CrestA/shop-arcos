@@ -6,6 +6,7 @@ use frontend\models\Category;
 use frontend\widgets\recommendedList\RecommendedList;
 use frontend\widgets\saleList\SaleList;
 use yii\helpers\Url;
+use yii\web\JqueryAsset;
 
 $this->title = 'Главная — Shop-Arcos';
 ?>
@@ -148,3 +149,7 @@ $this->title = 'Главная — Shop-Arcos';
     </section>
 
 </main>
+
+<?php $this->registerJsFile('@web/js/addToCart.js', [
+    'depends' => JqueryAsset::className()
+]);

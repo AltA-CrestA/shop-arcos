@@ -22,7 +22,7 @@ use yii\helpers\Url;
                         <div class="rebate">
                             <div class="rebate__content">
                                 <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
-                                <p>-15%</p>
+                                <p><?= round(($item->price * 100 / $item->old_price) - 100); ?>%</p>
                             </div>
                         </div>
                         <img src="<?= Yii::getAlias('@img'); ?>/catalog/<?= $item->img; ?>" alt="" />
@@ -30,7 +30,7 @@ use yii\helpers\Url;
                         <h3><?= $item->package; ?></h3>
                         <p><strike><?= $item->old_price; ?><span> руб.</span></strike></p>
                         <p><?= $item->price; ?><span> руб.</span></p>
-                        <a href="#">
+                        <a class="add-to-cart" data-id="<?= $item->id; ?>" href="<?= Url::to(['cart/add', 'id' => $item->id]); ?>">
                             <p>В корзину</p>
                             <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popularItem/cart.png" alt="" /></picture>
                         </a>
