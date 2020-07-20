@@ -10,7 +10,7 @@ use yii\web\JqueryAsset;
     <section class="filter">
         <div class="filter__content">
             <div class="filter__content__title">
-                <p>Фильтры и сортировка</p>
+                <p>Каталог</p>
                 <p>&times;</p>
             </div>
             <div class="filter__content-item">
@@ -26,7 +26,7 @@ use yii\web\JqueryAsset;
                 <h5>Каталог товаров <span><?= $counter; ?></span></h5>
                 <div class="catalogItem__content-title-btn">
                     <a href="#" id="buttonFilterMini">
-                        Кнопка
+                       <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/filter.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/filter.png" alt="" /></picture>
                     </a>
                 </div>
             </div>
