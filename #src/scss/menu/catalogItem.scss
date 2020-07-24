@@ -69,7 +69,7 @@
                     background: #ffffff;
                     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
                     border-radius: 5px;
-                    padding: 20px 20px;
+                    padding: 20px;
                     position: relative;
                     a {
                         img {
@@ -189,6 +189,13 @@
 
 @media (max-width: 450px) {
     .catalogItem__content-item-grid-product {
+        padding: 10px;
+        a {
+            img {
+                width: 100px;
+            }
+        }
+
         h4 {
             padding: 10px 0 5px 0px;
         }
