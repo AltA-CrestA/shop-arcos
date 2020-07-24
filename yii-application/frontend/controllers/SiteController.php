@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use frontend\models\Category;
+use frontend\models\PopupForm;
 use Yii;
 use yii\web\Controller;
 use frontend\models\ContactForm;
@@ -54,27 +55,56 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Спасибо за обращение. Мы свяжемся с вами как только сможем.');
+                $session = Yii::$app->session->setFlash('success', 'Спасибо за обращение. Мы свяжемся с вами в ближайшее время.');
             } else {
-                Yii::$app->session->setFlash('error', 'Возникла ошибка при отправки сообщения.');
+                $session = Yii::$app->session->setFlash('error', 'Возникла ошибка при отправки сообщения.');
             }
 
             return $this->refresh();
         } else {
             return $this->render('contact', [
                 'model' => $model,
+                'session' => $session,
             ]);
         }
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
-    public function actionAbout()
+    public function actionModal()
     {
-        return $this->render('about');
+        $errors = array();
+        $success = array();
+        $failure = array();
+        if (trim($_POST['name-popup']) == '') {
+            $errors[] = 'Укажите Имя';
+        }
+        if (trim($_POST['phone-popup']) == '') {
+            $errors[] = 'Укажите номер телефона';
+        }
+        if (empty($errors)) {
+            $name = $_POST['name-popup'];
+            $phone = $_POST['phone-popup'];
+//            $this->sendEmail(Yii::$app->params['adminEmail'], $name, $phone);
+            $success = 'Спасибо, наш специалист свяжется с вами в ближайшее время!';
+        } else {
+            foreach($errors as $error) {
+                $failure[] .= "$error<br/>";
+            }
+        }
+
+        return json_encode(array(
+            'success' => $success,
+            'failure' => $failure
+        ));
+    }
+
+    protected function sendEmail($email, $name, $phone)
+    {
+        return Yii::$app->mailer->compose()
+            ->setTo($email)
+            ->setFrom([$email => 'Письмо с сайта'])
+            ->setSubject('Письмо с сайта — Заполнена форма обратного звонка')
+            ->setHtmlBody("<h1>Заполнена форма обратного звонка</h1><br><br><h2>Имя отправителя: $name</h2><br><br><h2>Телефон отправителя: $phone</h2>")
+            ->send();
     }
 
 }

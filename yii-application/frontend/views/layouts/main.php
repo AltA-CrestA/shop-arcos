@@ -4,6 +4,7 @@
 /* @var $content string */
 
 use frontend\models\Cart;
+use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use frontend\assets\AppAsset;
@@ -120,7 +121,7 @@ AppAsset::register($this);
         </div>
     </div>
     <div class="footer__contentDown">
-        <p>ARCOS с 2020. Все права защищены</p>
+        <p>ARCOS © 2020. Все права защищены</p>
     </div>
 </footer>
 
@@ -148,16 +149,17 @@ AppAsset::register($this);
             <h2>Получить консультацию</h2>
             <p>Мы позвоним Вам в течении 10 минут</p>
             <a href="#" class="popup__clouse close-popup">&times;</a>
+            <div class="popup__message"></div>
             <div class="popup__item">
                 <div class="popup__item-inpit">
                     <div class="inpit__image">
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popup/name.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/name.png" alt="" /></picture>
+                        <picture><source srcset="<?= Yii::getAlias('@img'); ?>/popup/name.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/name.png" alt="" /></picture>
                     </div>
                     <input type="text" placeholder="Ваше имя" name="name-popup" id="name-popup" />
                 </div>
                 <div class="popup__item-inpit">
                     <div class="inpit__image">
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/popup/phone.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/phone.png" alt="" /></picture>
+                        <picture><source srcset="<?= Yii::getAlias('@img'); ?>/popup/phone.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/popup/phone.png" alt="" /></picture>
                     </div>
                     <input type="tel" placeholder="Ваш телефон" name="phone-popup" id="phone-popup" />
                 </div>

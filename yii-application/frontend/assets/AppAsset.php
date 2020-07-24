@@ -16,6 +16,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/script.js',
+        'js/popupForm.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
