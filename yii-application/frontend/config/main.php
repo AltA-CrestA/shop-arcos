@@ -49,6 +49,18 @@ return [
                 '/' => 'site/index',
             ],
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.mail.ru',
+                'username' => 'develop@webskill24.ru',
+                'password' => 's_V52wKrmsBE',
+                'port' => '465',
+                'encryption' => 'ssl',
+            ],
+        ],
     ],
     'params' => $params,
 ];

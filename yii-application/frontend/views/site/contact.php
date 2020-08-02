@@ -17,6 +17,7 @@ $this->title = 'Контактная форма';
     <main>
         <section class="contact">
             <div class="contact__content">
+                <?= ($session) ? $session->getFlash('success') : false; ?>
                 <div class="contact__content-form">
                     <h2><?= Html::encode($this->title) ?></h2>
                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
@@ -41,12 +42,6 @@ $this->title = 'Контактная форма';
                     </div>
 
                     <?php ActiveForm::end(); ?>
-<!--                    <input type="text" placeholder="ФИО*" />-->
-<!--                    <input type="number" placeholder="Телефон*" />-->
-<!--                    <textarea placeholder="Сообщение*" name="message" id="" cols="30" rows="10"></textarea>-->
-<!--                    <div class="contact__content-form-btn">-->
-<!--                        <a href="#">Отправить сообщение</a>-->
-<!--                    </div>-->
                 </div>
                 <div class="contact__content-map">
                     <script

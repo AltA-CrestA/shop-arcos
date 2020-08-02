@@ -90,4 +90,9 @@
       <path value="$PROJECT_DIR$/yii-application/vendor/paragonie/random_compat" />
     </include_path>
   </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/yii-application/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
 </project>
