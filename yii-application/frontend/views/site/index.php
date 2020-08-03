@@ -15,52 +15,64 @@ $this->title = 'Главная — Shop-Arcos';
     <section class="mainSection">
         <div class="slider">
             <div class="slider__item">
-                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/1.jpg" alt="" /></picture>
                 <div class="goOver">
-				<div class="goOver__content">
-					<h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
-					<a href="<?php echo Url::to(['catalog/index']); ?>">
-                        <p>Перейти в каталог</p>
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
-                    </a>
-				</div>
-			</div>
+				    <div class="goOver__content">
+                        <h2>Кольца</h2>
+					    <a href="<?php echo Url::to(['catalog/index']); ?>">
+                            <p>Перейти в каталог</p>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                        </a>
+				    </div>
+			    </div>
             </div>
             <div class="slider__item">
-                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/2.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/2.jpg" alt="" /></picture>
                 <div class="goOver">
-				<div class="goOver__content">
-					<h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
-					<a href="<?php echo Url::to(['catalog/index']); ?>">
-                        <p>Перейти в каталог</p>
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
-                    </a>
-				</div>
-			</div>
+                    <div class="goOver__content">
+                        <h2>Наконечники Н103 и Н56</h2>
+                        <a href="<?php echo Url::to(['catalog/index']); ?>">
+                            <p>Перейти в каталог</p>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="slider__item">
-                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/3.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/3.jpg" alt="" /></picture>
                 <div class="goOver">
-				<div class="goOver__content">
-					<h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
-					<a href="<?php echo Url::to(['catalog/index']); ?>">
-                        <p>Перейти в каталог</p>
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
-                    </a>
-				</div>
-			</div>
+                    <div class="goOver__content">
+                        <h2>Лентагвозди</h2>
+                        <a href="<?php echo Url::to(['catalog/index']); ?>">
+                            <p>Перейти в каталог</p>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="slider__item">
-                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/01.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/01.jpg" alt="" /></picture>
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/4.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/4.jpg" alt="" /></picture>
                 <div class="goOver">
-				<div class="goOver__content">
-					<h2>ФУРНИТУРА ДЛЯ МЕБЕЛИ</h2>
-                    <a href="<?php echo Url::to(['catalog/index']); ?>">
-                        <p>Перейти в каталог</p>
-                        <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
-                    </a>
-				</div>
-			</div>
+                    <div class="goOver__content">
+                        <h2>Пуговица-страза Акрил</h2>
+                        <a href="<?php echo Url::to(['catalog/index']); ?>">
+                            <p>Перейти в каталог</p>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/slider/5.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/slider/5.jpg" alt="" /></picture>
+                <div class="goOver">
+                    <div class="goOver__content">
+                        <h2>Пуговица-страза Стекло</h2>
+                        <a href="<?php echo Url::to(['catalog/index']); ?>">
+                            <p>Перейти в каталог</p>
+                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/arrow.svg" alt="" /></picture>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
