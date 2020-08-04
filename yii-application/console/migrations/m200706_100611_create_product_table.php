@@ -142,7 +142,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Матрица №32',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '4.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Устройство применяющееся в комплекте со станком-пресом, под каждый размер пуговицы своя матрица,материал -высокопрочная сталь,отпускается поштучно',
@@ -151,7 +151,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Матрица №36',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '4.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Устройство применяющееся в комплекте со станком-пресом, под каждый размер пуговицы своя матрица,материал -высокопрочная сталь,отпускается поштучно',
@@ -160,7 +160,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Матрица №40',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '4.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Устройство применяющееся в комплекте со станком-пресом, под каждый размер пуговицы своя матрица,материал -высокопрочная сталь,отпускается поштучно',
@@ -169,7 +169,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Станок-пресс',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '5.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Устройство применяющееся в комплекте со станком-пресом, под каждый размер пуговицы своя матрица,материал -высокопрочная сталь,отпускается поштучно',
@@ -207,7 +207,7 @@ class m200706_100611_create_product_table extends Migration
         ]);
 
         $this->insert('product', [
-            'name' => 'Лентагвозди (молдинг) 9.5мм',
+            'name' => 'Лента-гвозди (молдинг) 9.5мм',
             'category_id' => '3',
             'img' => '9.jpg',
             'package' => '50 шт/упаковка',
@@ -218,7 +218,7 @@ class m200706_100611_create_product_table extends Migration
         ]);
 
         $this->insert('product', [
-            'name' => 'Лентагвозди (молдинг) 11мм',
+            'name' => 'Лента-гвозди (молдинг) 11мм',
             'category_id' => '3',
             'img' => '10.jpg',
             'package' => '50 шт/упаковка',
@@ -256,7 +256,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Пистолет для дек. гвоздей',
-            'category_id' => '3',
+            'category_id' => '8',
             'img' => '12.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Пневматический пистолет для штучного забивания декоративных гвоздей. В комплект входят так же насадка под гвоздь и пластиковая матрица. Отпускается штучно.',
@@ -265,7 +265,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Пистолет для дек.гвоздей №2',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '13.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Пневматический пистолет  для забивания декоративных гвоздей в комплекте с барабаном для подачи гвоздей в насадку в автоматическом режиме. Отпускается штучно.',
@@ -273,7 +273,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Пистолет скоб. В фут. С рем комп.',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '14.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Пистолет пневматический в футляре ,скобозабивной 6-16мм, рем комплект',
@@ -365,7 +365,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Кольцо декоративное 8см',
-            'category_id' => '7',
+            'category_id' => '6',
             'img' => '24.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: бронза,серебро,золото. Материал — металл. Диаметр внутренний 60 мм, наружний 80 мм. Толщина кольца 10мм.',
@@ -375,7 +375,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Кольцо декоративное 10см',
-            'category_id' => '7',
+            'category_id' => '6',
             'img' => '25.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвет:бронза,серебро. Материал — металл. Диаметр внутренний 80 мм,наружний 100 мм.толщина кольца 10мм.',
@@ -392,8 +392,8 @@ class m200706_100611_create_product_table extends Migration
         ]);
 
         $this->insert('product', [
-            'name' => 'Текс.застежка (липучка) 25мм',
-            'category_id' => '7',
+            'name' => 'Текстильная застежка (липучка) 25мм',
+            'category_id' => '9',
             'img' => '30.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвета: бежевый, коричневый. Намотка 25м.',
@@ -401,8 +401,8 @@ class m200706_100611_create_product_table extends Migration
         ]);
 
         $this->insert('product', [
-            'name' => 'Текс.застежка (липучка) 50мм',
-            'category_id' => '7',
+            'name' => 'Текстильная застежка (липучка) 50мм',
+            'category_id' => '9',
             'img' => '30.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвета: бежевый, коричневый. Намотка 25м.',
@@ -429,7 +429,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Мел Швейный',
-            'category_id' => '4',
+            'category_id' => '9',
             'img' => '32.jpg',
             'package' => '20 шт/упаковка',
             'description' => 'В упаковке 20 шт, цветной и белый отдельными упаковками. Отпускается кратно упаковки.',
@@ -458,7 +458,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Лента Скрытого Шва 20м',
-            'category_id' => '6',
+            'category_id' => '9',
             'img' => '36.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Стальная лента с зубзами для фиксации ткани. Образует аккуратный незаметный шов на изделии. Отпускается бабинами.',
@@ -468,7 +468,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Электроножницы',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '37.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Электрические ножницы для ткани работают как от сети так и от аккумулятора,в комплекте идет зарядный блок и запасные лезвия.',
@@ -477,7 +477,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Электроножницы ПЛЮС',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '38.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Электрические ножницы для ткани, работают как от сети,так и от аккумулятора. В комплекте идет зарядный блок,запасные лезвия,дополнительный аккумулятор.',
@@ -486,7 +486,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Электроножницы дисковые',
-            'category_id' => '9',
+            'category_id' => '8',
             'img' => '39.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Электрические ножницы для ткани, работают как от сети,так и от аккумулятора. В комплекте идет зарядный блок,запасные лезвия,дополнительный аккумулятор.',
@@ -495,7 +495,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Пуговица светодиодная',
-            'category_id' => '9',
+            'category_id' => '1',
             'img' => '40.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Светодиодная акриловая страза мощностью 0.1w диаметром 30мм отпускается штучно.',
@@ -516,7 +516,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Ножка "Элита" без колеса H56',
-            'category_id' => '9',
+            'category_id' => '2',
             'img' => '44.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: Серебро, золото. Материал-металл. Размер Изделия: высота 56 мм диаметр 29 мм.',
@@ -526,7 +526,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Ножка "Элита" без колеса H103',
-            'category_id' => '9',
+            'category_id' => '2',
             'img' => '44.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Цвет: Серебро, золото. Материал-металл. Размер Изделия: высота 103 мм диаметр 30 мм.',
@@ -536,7 +536,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Ножка Акрил 118',
-            'category_id' => '9',
+            'category_id' => '2',
             'img' => '45.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Акриловая опора. Материал: прозрачный пластик',
@@ -545,7 +545,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Ножка Акрил 150',
-            'category_id' => '9',
+            'category_id' => '2',
             'img' => '46.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Акриловая опора. Материал: прозрачный пластик',
@@ -554,7 +554,7 @@ class m200706_100611_create_product_table extends Migration
 
         $this->insert('product', [
             'name' => 'Ножка Акрил 180',
-            'category_id' => '9',
+            'category_id' => '2',
             'img' => '47.jpg',
             'package' => '1 шт/упаковка',
             'description' => 'Акриловая опора. Материал: прозрачный пластик',

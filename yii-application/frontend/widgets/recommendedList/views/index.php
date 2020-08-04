@@ -19,8 +19,8 @@ use yii\helpers\Url;
                 <?php foreach ($recommendedList as $item): ?>
                 <div class="popularItem__content-slider-track-item">
                     <div class="popularItem__content-slider-track-item-product">
-                        <img src="<?php echo Yii::getAlias('@img'); ?>/catalog/<?= $item->img; ?>" alt="" />
-                        <h4><?= $item->name; ?></h4>
+                        <a href="<?= Url::to(['catalog/product', 'id' => $item->id]); ?>"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/<?= $item->img; ?>" alt="" /></a>
+                        <a href="<?= Url::to(['catalog/product', 'id' => $item->id]); ?>"><h4><?= $item->name; ?></h4></a>
                         <h3><?= $item->package; ?></h3>
                         <p><?= $item->price; ?><span> руб.</span></p>
                         <a class="add-to-cart" data-id="<?= $item->id; ?>" href="<?= Url::to(['cart/add', 'id' => $item->id]); ?>">

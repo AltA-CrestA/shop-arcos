@@ -37,9 +37,24 @@ use yii\web\JqueryAsset;
                 <div class="catalogItem__content-item-grid">
                     <?php foreach ($productList as $product): ?>
                         <div class="catalogItem__content-item-grid-product">
+
+                            <?php if ($product->is_sale == Yii::$app->params['saleProduct']): ?>
+                            <div class="rebate">
+                                <div class="rebate__content">
+                                    <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.webp" type="image/webp"><img class="img__rebate" src="<?php echo Yii::getAlias('@img'); ?>/stocks/rebate.png" alt="" /></picture>
+                                    <p><?= round(($product->price * 100 / $product->old_price) - 100); ?>%</p>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+
                             <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/<?php echo $product->img; ?>" alt="" /></a>
                             <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><h4><?php echo $product->name; ?></h4></a>
                             <h3><?php echo $product->package; ?></h3>
+
+                            <?php if ($product->is_sale == Yii::$app->params['saleProduct']): ?>
+                                <p><strike><?= $product->old_price; ?><span> руб.</span></strike></p>
+                            <?php endif; ?>
+
                             <p><?php echo $product->price; ?><span> руб.</span></p>
                             <a class="add-to-cart" data-id="<?= $product->id; ?>" href="<?= Url::to(['cart/add', 'id' => $product->id]); ?>">
                                 <p>В корзину</p>

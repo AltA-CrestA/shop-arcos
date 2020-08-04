@@ -25,8 +25,8 @@ use yii\helpers\Url;
                                 <p><?= round(($item->price * 100 / $item->old_price) - 100); ?>%</p>
                             </div>
                         </div>
-                        <img src="<?= Yii::getAlias('@img'); ?>/catalog/<?= $item->img; ?>" alt="" />
-                        <h4><?= $item->name; ?></h4>
+                        <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><img src="<?= Yii::getAlias('@img'); ?>/catalog/<?= $item->img; ?>" alt="" /></a>
+                            <a href="<?= Url::to(['catalog/product', 'id' => $product->id]); ?>"><h4><?= $item->name; ?></h4></a>
                         <h3><?= $item->package; ?></h3>
                         <p><strike><?= $item->old_price; ?><span> руб.</span></strike></p>
                         <p><?= $item->price; ?><span> руб.</span></p>

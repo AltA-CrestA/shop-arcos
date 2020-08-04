@@ -38,7 +38,7 @@ class m200706_104146_create_category_table extends Migration
         ]);
 
         $this->insert('category', [
-            'name' => 'Наконечники',
+            'name' => 'Ножки и Наконечники',
             'img' => '2.jpg',
         ]);
 
@@ -48,7 +48,7 @@ class m200706_104146_create_category_table extends Migration
         ]);
 
         $this->insert('category', [
-            'name' => 'Нитки',
+            'name' => 'Нить',
             'img' => '4.jpg',
         ]);
 
@@ -58,22 +58,22 @@ class m200706_104146_create_category_table extends Migration
         ]);
 
         $this->insert('category', [
-            'name' => 'Профиль ППУ',
+            'name' => 'Кольца',
             'img' => '6.jpg',
         ]);
 
         $this->insert('category', [
-            'name' => 'Кольца декоративные',
+            'name' => 'Басонные изделия',
             'img' => '7.jpg',
         ]);
 
         $this->insert('category', [
-            'name' => 'Басонные изделия',
+            'name' => 'Оборудование',
             'img' => '8.jpg',
         ]);
 
         $this->insert('category', [
-            'name' => 'Прочие фурнитура',
+            'name' => 'Прочая фурнитура',
             'img' => '9.jpg',
         ]);
     }
