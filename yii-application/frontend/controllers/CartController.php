@@ -34,12 +34,14 @@ class CartController extends Controller
         Yii::$app->response->format = Response::FORMAT_JSON;
 
         $id = Yii::$app->request->get('id');
+        $qty = (int)Yii::$app->request->get('qty');
+        $qty = !$qty ? 1 : $qty;
         $product = Product::findOne($id);
 
         if (empty($product)) return false;
 
         $cart = new Cart();
-        $cart->addToCart($product);
+        $cart->addToCart($product, $qty);
 
         return Json::encode([
             'qty' => $_SESSION['cart.qty'],

@@ -20,7 +20,7 @@ use yii\web\JqueryAsset; ?>
                 <?php endif; ?>
                 <p class="price"><?= $product->price; ?><span>₽</span></p>
                 <label for="qty">Количество:</label>
-                <input type="text" value="1" id="qty">
+                <input type="number" value="1" id="qty">
                 <div class="product__content-item-info-btn">
                     <a class="pay__link add-to-cart" data-id="<?= $product->id; ?>" href="<?= Url::to(['cart/add', 'id' => $product->id]); ?>">В корзину</a>
                 </div>
