@@ -30,15 +30,44 @@
                 .backMenu__link {
                     color: #888888;
                     @include adaptiv-fontAll(16, 14);
-                    line-height: 22px;
+                }
+
+                h5 {
+                    @include adaptiv-fontAll(20, 16);
+                    font-weight: 300;
+                    padding: 30px 0 15px;
                 }
 
                 .price {
                     text-align: left;
-                    padding: 20px 0 30px;
+                    padding: 0px 0 10px;
+                    font-weight: 500;
                     font-size: 20px;
                     line-height: 20px;
                     color: rgb(245, 57, 6);
+                }
+                .qty {
+                    margin-bottom: 40px;
+                    @include adaptiv-fontAll(18, 12);
+                    label {
+                        color: black;
+                    }
+
+                    input {
+                        border-bottom: 0.5px solid black;
+                        background: transparent;
+                        padding: 3px;
+                        width: 50px;
+                        @include adaptiv-fontAll(18, 12);
+                    }
+                    input[type="number"] {
+                        -moz-appearance: textfield;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
                 }
 
                 &-btn {

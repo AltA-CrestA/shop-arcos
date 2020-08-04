@@ -117,6 +117,13 @@
 
             .delete {
                 @include adaptiv-fontAll(30, 20);
+                @include disflex(flex, center, center);
+
+                a {
+                    border: 1px solid black;
+                    border-style: dashed;
+                    padding: 5px 10px;
+                }
             }
 
             &-total {
@@ -206,6 +213,13 @@
                     &-main {
                         img {
                             width: 40px;
+                        }
+                    }
+                    .delete {
+                        a {
+                            border: 1px solid black;
+                            border-style: dashed;
+                            padding: 2px 4px;
                         }
                     }
                 }

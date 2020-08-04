@@ -117,6 +117,9 @@
                         line-height: 14px;
                         color: #c4c4c4;
                     }
+                    strike {
+                        @include adaptiv-fontAll(14, 10);
+                    }
 
                     p {
                         font-weight: 500;

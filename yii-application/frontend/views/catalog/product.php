@@ -14,13 +14,15 @@ use yii\web\JqueryAsset; ?>
             <div class="product__content-item-info">
                 <h2><?= $product->name; ?></h2>
                 <a class="backMenu__link" href="<?= Url::to(['catalog/category', 'categoryId' => $product->category_id]); ?>">Вернуться в каталог</a>
-                <h3><?php echo $product->package; ?></h3>
+                <h5><?php echo $product->package; ?></h5>
                 <?php if ($product->is_sale == Yii::$app->params['saleProduct']): ?>
                     <p><strike><?= $product->old_price; ?><span> руб.</span></strike></p>
                 <?php endif; ?>
                 <p class="price"><?= $product->price; ?><span>₽</span></p>
-                <label for="qty">Количество:</label>
-                <input type="number" value="1" id="qty">
+                <div class="qty">
+					<label for="qty">Количество:</label>
+					<input type="number" value="1" id="qty" />
+				</div>
                 <div class="product__content-item-info-btn">
                     <a class="pay__link add-to-cart" data-id="<?= $product->id; ?>" href="<?= Url::to(['cart/add', 'id' => $product->id]); ?>">В корзину</a>
                 </div>
