@@ -1,6 +1,8 @@
 <?php
 /* @var $this yii\web\View */
 
+$this->title = 'Каталог — Shop-Arcos';
+
 use frontend\widgets\categoryList\CategoryList;
 use yii\helpers\Url;
 use yii\web\JqueryAsset;

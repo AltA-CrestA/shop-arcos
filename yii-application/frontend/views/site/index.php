@@ -95,7 +95,8 @@ $this->title = 'Главная — Shop-Arcos';
                 <?php foreach ($categoryList as $item): ?>
                     <div class="catalog__content-grid-item <?php Category::byStyleCssWeUnited($item->id); ?>">
                         <a href="#">
-                            <picture><source srcset="<?php echo Yii::getAlias('@img'); ?>/catalog/1.webp" type="image/webp"><img src="<?php echo Yii::getAlias('@img'); ?>/catalog/1.png" alt="" /></picture>
+<!--                            <picture><source srcset="--><?php //echo Yii::getAlias('@img'); ?><!--/catalog/1.webp" type="image/webp"><img src="--><?php //echo Yii::getAlias('@img'); ?><!--/catalog/1.png" alt="" /></picture>-->
+                            <img src="<?= Yii::getAlias('@img'); ?>/category/<?= $item->img; ?>" alt="" />
                             <p><?= $item->name; ?></p>
                         </a>
                     </div>

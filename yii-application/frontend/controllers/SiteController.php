@@ -2,7 +2,6 @@
 namespace frontend\controllers;
 
 use frontend\models\Category;
-use frontend\models\PopupForm;
 use Yii;
 use yii\web\Controller;
 use frontend\models\ContactForm;
@@ -83,7 +82,7 @@ class SiteController extends Controller
         if (empty($errors)) {
             $name = $_POST['name-popup'];
             $phone = $_POST['phone-popup'];
-//            $this->sendEmail(Yii::$app->params['adminEmail'], $name, $phone);
+            $this->sendEmail(Yii::$app->params['adminEmail'], $name, $phone);
             $success = 'Спасибо, наш специалист свяжется с вами в ближайшее время!';
         } else {
             foreach($errors as $error) {

@@ -1,9 +1,12 @@
 <?php
 
+$this->title = $product->name . ' — Shop-Arcos';
+
 use frontend\widgets\recommendedList\RecommendedList;
 use frontend\widgets\saleList\SaleList;
 use yii\helpers\Url;
-use yii\web\JqueryAsset; ?>
+use yii\web\JqueryAsset;
+?>
 
 <section class="product">
     <div class="product__content">
